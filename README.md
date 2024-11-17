@@ -10,7 +10,7 @@ The website will be a dress-up game in which users can create their own characte
 ### Website outline:
 
 #### 1. Homepage 
-- It contains 3 buttons in orderto redirect the user to the 3 separate web pages.
+- It contains 2 buttons in orderto redirect the user to the 2 separate web pages.
 
 #### 2. Webpage 1 / The dress up game
 - This is where the user can customize their characters with a few different options.
