@@ -14,8 +14,10 @@ The website will be a dress-up game in which users can create their own characte
 
 #### 2. Webpage 1 / The dress up game
 - This is where the user can customize their characters with a few different options.
-- Contains buttons for some parts of the character (Eyes, Mouth, Back Hair, Front hair, Top, Bottom, Shoes)
+- Contains buttons for some parts of the character (Face, Back Hair, Front hair, Top, Bottom, Shoes)
 
 #### 3. Webpage 2 / The dialogue options
 - This will display the created character, along with a dialogue box that will feature some dialogues using the user inputted name.
-- Contains buttons for different dialogue options including the name. ("Hello #name", "Hello I am #name", )
+- Contains buttons for different dialogue options including the name. ("Hello #name", "Hello I am #name", "My name is #name", and custom input too)
+
+### JS Incorporation
