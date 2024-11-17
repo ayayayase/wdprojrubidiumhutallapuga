@@ -31,5 +31,8 @@ Sample of the dress up game part (not final, this is just to test if I can actua
 <https://glitch.com/edit/#!/dresstest>
 
 - Save and display user's input in different texts (name): document.getElementById
-- For buttons and their response: different functions for each button
-- For changing the elements in the dress up game itself: setAttribute
+, extra lines to prevent them from typing inappropriate words- For buttons and their response: different functions for each button
+
+- For the custom input option: Input boxes, extra lines to prevent user from typing inappropriate words- For changing the elements in the dress up game itself: sdocument.querySelector, etAttribute
+, if else statements
+-In general, the entire website can be built with topics already discussed in class in the previous quarters. The only new thing that has not yet been discussed is the document.querySelection that will retrieve the setAttribute function
