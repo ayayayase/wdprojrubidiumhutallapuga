@@ -19,5 +19,12 @@ The website will be a dress-up game in which users can create their own characte
 #### 3. Webpage 2 / The dialogue options
 - This will display the created character, along with a dialogue box that will feature some dialogues using the user inputted name.
 - Contains buttons for different dialogue options including the name. ("Hello #name", "Hello I am #name", "My name is #name", and custom input too)
+-Contains buttons to change the inputted name, and another button to change backgrounds
 
 ### JS Incorporation
+Sample of the dress up game part (not final, this is just to test if I can actually do it):
+https://glitch.com/edit/#!/dresstest
+
+-Save and display user's input in different texts (name): document.getElementById
+-For buttons and their response: different functions for each button
+-For changing the elements in the dress up game itself: setAttribute
