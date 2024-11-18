@@ -36,3 +36,7 @@ Sample of the dress up game part (not fina, this is just to test if I can actual
 - For the custom input option: Input boxes, extra lines to prevent user from typing inappropriate words- For changing the elements in the dress up game itself: sdocument.querySelector, etAttribute
 , if else statements
 -In general, the entire website can be built with topics already discussed in class in the previous quarters. The only new thing that has not yet been discussed is the document.querySelection that will retrieve the id of the divs, and setAttribute function to change it's class to the class of the current element.
+
+### Wireframe 
+
+[image](https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/e65f8e56-54ce-49e1-969a-c3c76b1aa1b8.image.png?v=1731936781302)
