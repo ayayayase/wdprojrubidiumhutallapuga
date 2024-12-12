@@ -1,8 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
-  background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/homepage.png?v=1733987770427);
-  background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    margin: 0; 
-    height: 100vh; 
+    background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/hpbg.jpg?v=1733988246127);
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
 }
