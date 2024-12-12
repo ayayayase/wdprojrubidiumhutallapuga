@@ -1,8 +1,7 @@
 body {
-  background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/homepage%20.png?v=1733985923585);
-   background-size: cover; 
+  background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/homepage.png?v=1733987770427);
+  background-size: contain; 
     background-repeat: no-repeat; 
-    background-attachment: fixed; 
     background-position: center; 
     margin: 0; 
     height: 100vh; 
