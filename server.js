@@ -17,9 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //Sets a basic route index.hbs when website initially starts and when home is clicked from the nav bar or whenever a process needs to go back to home 
 app.get('/', (req, res) => {
-    res.render('index.hbs');
-})
-
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Step 5: Start HTTP Server on a port number 3000
 // This will create a web service for your own project
