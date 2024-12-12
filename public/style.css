@@ -7,12 +7,11 @@ html, body {
 }
 
 body {
-    background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/hpbg.jpg?v=1733988246127);
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    background-image: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/hpbg.jpg?v=1733988246127), url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/hpscreen.png?v=1733987898712);
+   background-size: cover, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, center center;
+    background-attachment: fixed, fixed;
     height: 100vh;
     overflow: hidden;
 }
