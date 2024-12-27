@@ -109,5 +109,7 @@ z-index: 999;
 #name {
   z-index: 999;
   position: absolute;
-  font-size
+  font-size: 60px;
+  font-family: arcadealternate;
+  top: 350px;
 }
