@@ -135,6 +135,16 @@ z-index: 999;
   top: 660px;
 }
 
+#changedialogue {
+   z-index: 1000;
+  font-family: arcadealternate;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 375px;
+    right: 300px;
+}
+
 #changename {
   left: 450px;
 }
@@ -146,3 +156,16 @@ z-index: 999;
 #changename:hover, #changebackground:hover{
   filter: brightness(80%);
 }
+
+#changedialogue:hover {
+  filter: brightness(80%);
+}
+
+#dialogueinput {
+  z-index: 999;
+}
+
+#dialogueinput {
+  size: 100px;
+}
+
