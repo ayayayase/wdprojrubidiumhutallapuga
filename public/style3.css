@@ -111,7 +111,7 @@ z-index: 999;
   position: absolute;
   font-size: 55px;
   font-family: arcadealternate;
-  top: 392px;
+  top: 389px;
   left: 450px;
   color: #ad8cff;
 }
@@ -128,4 +128,21 @@ z-index: 999;
 
 #changename, #changebackground {
   z-index: 999;
+  font-family: arcadealternate;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 660px;
+}
+
+#changename {
+  left: 450px;
+}
+
+#changebackground {
+  right: 450px;
+}
+
+#changename:hover, #changebackground:hover{
+  filter: brightness(80%);
 }
