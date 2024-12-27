@@ -109,7 +109,19 @@ z-index: 999;
 #name {
   z-index: 999;
   position: absolute;
-  font-size: 60px;
+  font-size: 55px;
   font-family: arcadealternate;
-  top: 350px;
+  top: 392px;
+  left: 450px;
+  color: #ad8cff;
+}
+
+#dialogue {
+  z-index: 999;
+  position: absolute;
+  font-size: 35px;
+  font-family: arcadealternate;
+  top: 490px;
+  left: 450px;
+  color: #ad8cff;
 }
