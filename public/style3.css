@@ -74,3 +74,22 @@ height: auto;
   top: 40px;
   right: 280px;
 }
+
+#caption {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 60px;
+  right: 300px;
+  color: #F862FF;
+}
+
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 55px;
+  right: 250px;
+}
