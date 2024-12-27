@@ -74,5 +74,9 @@ height: auto;
   z-index: 1000;
   position: absolute;
   font-family: plank;
-  color: #7c4ddf;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 40px;
+  right: 280px;
 }
