@@ -32,9 +32,18 @@ body {
 }
 
 #btnback1, #btnstudio {
-  position: position: relative;
+  position: relative;
   z-index: 1000;
-  top: 100px;
+  top: 260px;
 height: auto;
-  width: 150px;
+  width: 180px;
+  filter: drop-shadow(20px 10px 0px #b3f0fb)
+}
+
+#btnback1 {
+  left: -600px;
+}
+
+#btnback1:hover, #btnstudio:hover{
+  filter: brightness(80%);
 }
