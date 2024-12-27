@@ -101,3 +101,13 @@ z-index: 999;
   width: 1200px;
   bottom: -10px;
 }
+
+#dialogue {
+  z-index: 999;
+}
+
+#name {
+  z-index: 999;
+  position: absolute;
+  font-size
+}
