@@ -58,3 +58,19 @@ height: auto;
   font-family: arcadealternate;
   color: #824ced;
 }
+
+@font-face {
+  font-family: plank;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
+}
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 40px;
+  right: 280px;
+}
