@@ -162,10 +162,12 @@ z-index: 999;
 }
 
 #dialogueinput {
-  z-index: 999;
+  z-index: 1000;
+  width: 250px;
+  height: 50px;
+   position: absolute;
+  top: 350px;
+    right: 325px;
 }
 
-#dialogueinput {
-  size: 100px;
-}
 
