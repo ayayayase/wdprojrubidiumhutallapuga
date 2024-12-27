@@ -125,3 +125,7 @@ z-index: 999;
   left: 450px;
   color: #ad8cff;
 }
+
+#changename, #changebackground {
+  z-index: 999;
+}
