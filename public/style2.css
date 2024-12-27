@@ -90,3 +90,12 @@ height: auto;
   right: 280px;
   color: #F862FF;
 }
+
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 40px;
+  right: 330px;
+}
