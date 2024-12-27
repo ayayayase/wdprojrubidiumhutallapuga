@@ -31,23 +31,17 @@ body {
   top: ;
 }
 
-#btnback1, #btnstudio {
+#btnback1 {
   position: relative;
   z-index: 1000;
   top: 260px;
 height: auto;
   width: 180px;
   filter: drop-shadow(20px 10px 0px black);
+   left: -660px;
 }
 
-#btnback1 {
-  left: -570px;
-}
 
-#btnstudio {
-  right: -570px;
-}
-
-#btnback1:hover, #btnstudio:hover{
+#btnback1:hover {
   filter: brightness(80%);
 }
