@@ -93,3 +93,11 @@ height: auto;
   top: 55px;
   right: 250px;
 }
+
+#dialoguebox {
+z-index: 999;
+  position: absolute;
+  height: auto;
+  width: 1200px;
+  bottom: -10px;
+}
