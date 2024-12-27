@@ -54,8 +54,17 @@ body {
 #btnstrt {
 left: -75px;}
 
+#btnstudio {
+  right: -75px;
+}
 
 #btnstrt:hover, #btnstudio:hover{
   filter: brightness(80%);
 }
 
+#top {
+  position: absolute;
+  top: -10px;
+  z-index: 1000;
+  font-style: ArcadeAlternate;
+}
