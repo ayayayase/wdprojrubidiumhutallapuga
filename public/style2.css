@@ -51,3 +51,16 @@ height: auto;
 #btnback1:hover, #btnstudio:hover{
   filter: brightness(80%);
 }
+
+@font-face{
+  font-family:arcadealternate;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
+}
+
+#top {
+  position: absolute;
+  top: -10px;
+  z-index: 1000;
+  font-family: arcadealternate;
+  color: #824ced;
+}
