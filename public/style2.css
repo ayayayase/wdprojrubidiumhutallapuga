@@ -32,20 +32,20 @@ body {
 }
 
 #btnback1, #btnstudio {
-  position: relative;
+  position: absolute;
   z-index: 1000;
-  top: 260px;
+  top: 530px;
 height: auto;
   width: 180px;
   filter: drop-shadow(20px 10px 0px black);
 }
 
 #btnback1 {
-  left: -570px;
+  left: 10px;
 }
 
 #btnstudio {
-  right: -570px;
+  right: 30px;
 }
 
 #btnback1:hover, #btnstudio:hover{
@@ -63,4 +63,16 @@ height: auto;
   z-index: 1000;
   font-family: arcadealternate;
   color: #824ced;
+}
+
+@font-face {
+  font-family: plank;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
+}
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #7c4ddf;
 }

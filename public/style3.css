@@ -32,13 +32,13 @@ body {
 }
 
 #btnback1 {
-  position: relative;
+   position: absolute;
   z-index: 1000;
-  top: 260px;
+  top: 530px;
 height: auto;
   width: 180px;
   filter: drop-shadow(20px 10px 0px black);
-   left: -660px;
+    left: 10px;
 }
 
 
