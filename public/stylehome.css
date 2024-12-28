@@ -75,16 +75,5 @@ left: -75px;}
   color: #824ced;
 }
 
-footer {
- background-color: white;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    width: 100%;
-    position: relative;
-    margin-top: auto; /* Push the footer to the bottom */
-    box-sizing: border-box;
-  z-index: 1000;
   
 }
