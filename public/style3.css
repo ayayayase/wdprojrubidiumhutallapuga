@@ -153,11 +153,17 @@ z-index: 999;
   right: 450px;
 }
 
-#changename:hover, #changebackground:hover{
-  filter: brightness(80%);
+#hideshow {
+   z-index: 1000;
+  font-size: 60px;
+   position: absolute;
+  top: 20px;
+    left: 270px;
+  font-family: arcadealternate;
+  color:white;
 }
 
-#changedialogue:hover {
+#changename:hover, #changebackground:hover, #changedialogue:hover, #hideshow:hover{
   filter: brightness(80%);
 }
 
@@ -169,5 +175,4 @@ z-index: 999;
   top: 350px;
     right: 325px;
 }
-
 
