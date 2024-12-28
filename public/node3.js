@@ -7,9 +7,19 @@ document.getElementById("changename").onclick = function changename () {
 }
 
 document.getElementById("changedialogue").onclick = function changedialogue () {
-  // Get the current value of the #dialogueinput field
+
   var dialogueinput = document.getElementById("dialogueinput").value;
   
-  // Update the #dialogue element with the new input value
   document.getElementById("dialogue").innerHTML = dialogueinput;
+}
+
+document.getElementById("hideshow").onclick = function hide () {
+  document.getElementById("hideshow").style.display = "none";
+  
+document.getElementById("showhide").style.display = "inline";
+}
+
+document.getElementById("showhide").onclick = function hide () {
+  document.getElementById("showhide").style.display = "none";
+document.getElementById("hideshow").style.display = "inline";
 }
