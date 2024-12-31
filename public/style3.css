@@ -52,7 +52,7 @@ height: auto;
 
 #top {
   position: absolute;
-  top: -10px;
+  top: -2px;
   z-index: 1000;
   font-family: arcadealternate;
   color: #824ced;
@@ -139,7 +139,7 @@ z-index: 999;
 }
 
 #changebackground {
-  top: 130px;
+  top: 170px;
 }
 
 #changedialogue {

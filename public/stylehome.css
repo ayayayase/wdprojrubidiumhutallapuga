@@ -38,7 +38,7 @@ body {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  top: -175px;
+  top: -165px;
   flex:1;
 }
 
@@ -47,7 +47,7 @@ body {
   z-index: 1000;
   top: 200px;
   height: auto;
-  width: 325px;
+  width: 350px;
   flex:1;
 }
 
@@ -69,7 +69,7 @@ left: -75px;}
 
 #top {
   position: absolute;
-  top: -10px;
+  top: -2px;
   z-index: 1000;
   font-family: arcadealternate;
   color: #824ced;
