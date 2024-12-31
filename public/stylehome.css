@@ -4,6 +4,7 @@ html, body{
     height: 100%;
     width: 100%;
      overflow-x: hidden;
+  overflow-y:hidden;
   position:relative;
   display: flex;
   justify-content: center;
@@ -81,15 +82,18 @@ left: -75px;}
 
 footer {
   z-index:1000;
-  color: white;
+  color:#824ced;
   margin-top:auto;
-  padding: 20px;
-  background-color: black;
+  padding: 10px;
+  background-color: white;
   position:absolute;
   bottom:0;
   right: 0;
   left: 0;
-  width: 100%
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
 }
 
 #bgimg {
