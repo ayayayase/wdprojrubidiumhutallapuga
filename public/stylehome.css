@@ -78,14 +78,3 @@ left: -75px;}
   font-family: arcadealternate;
   color: #824ced;
 }
-
-  
-footer {
-  z-index:1000;
-  background-color: white;
-  padding: 10px;
-  position: absolute;
-  left: 0;
-  right:0;
-  bottom:0;
-}
