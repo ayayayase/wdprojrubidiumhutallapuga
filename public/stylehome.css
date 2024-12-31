@@ -11,12 +11,11 @@ html, body{
 }
 
 body {
-    
       background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    min-height: 100%;
+    min-height: 100vh;
   display: flex;
   flex-direction:column;
 }
@@ -26,10 +25,10 @@ body {
   display: block;
   margin: 0;
   height: auto;
-  width: 1300px;
+  width: 1315px;
   margin-left: auto;
   margin-right: auto;
-  top: ;
+  flex:1;
 }
 
 
@@ -43,6 +42,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   top: -175px;
+  flex:1;
 }
 
 #btnstrt, #btnstudio {
@@ -50,7 +50,8 @@ body {
   z-index: 1000;
   top: 200px;
   height: auto;
-  width: 390px;
+  width: 325px;
+  flex:1;
 }
 
 #btnstrt {
@@ -75,10 +76,12 @@ left: -75px;}
   z-index: 1000;
   font-family: arcadealternate;
   color: #824ced;
+  flex:1;
 }
 
 footer {
   z-index:1000;
+  color: white;
   margin-top:auto;
   padding: 20px;
   background-color: black;
@@ -96,4 +99,5 @@ footer {
   position: absolute; 
   top: 0;
   left: 0;
+  flex:1;
 }
