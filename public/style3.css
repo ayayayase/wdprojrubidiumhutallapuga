@@ -1,9 +1,10 @@
-html, body {
-    margin: 0;
+html, body{
+    margin: 0 auto;
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+     overflow-x: hidden;
+  overflow-y:hidden;
   position:relative;
   display: flex;
   justify-content: center;
@@ -11,30 +12,28 @@ html, body {
 }
 
 body {
-    background-image: url(https://i.bandori.party/u/c/art/a/4905Eve-Wakamiya-Pure-Filled-With-Gratitude-and-Joy-UYQS0P.png);
-      background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+  display: flex;
+  flex-direction:column;
 }
+
 
 #scrn {
   position: absolute;
   display: block;
   margin: 0;
   height: auto;
-  width: 1350px;
+  width: 1315px;
   margin-left: auto;
   margin-right: auto;
-  top: ;
+  flex:1;
 }
+
 
 #btnback1 {
    position: absolute;
   z-index: 1000;
-  top: 530px;
+  top: 500px;
 height: auto;
   width: 180px;
   filter: drop-shadow(20px 10px 0px black);
@@ -132,7 +131,15 @@ z-index: 999;
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 660px;
+  left: 270px;
+}
+
+#changename {
+    top: 120px;
+}
+
+#changebackground {
+  top: 130px;
 }
 
 #changedialogue {
@@ -143,14 +150,6 @@ z-index: 999;
   position: absolute;
   top: 375px;
     right: 300px;
-}
-
-#changename {
-  left: 450px;
-}
-
-#changebackground {
-  right: 450px;
 }
 
 #hideshow {
@@ -187,3 +186,28 @@ z-index: 999;
     right: 325px;
 }
 
+footer {
+  z-index:1000;
+  color:#824ced;
+  margin-top:auto;
+  padding: 10px;
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
+}
+
+#bgimg {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  position: absolute; 
+  top: 0;
+  left: 0;
+  flex:1;
+}
