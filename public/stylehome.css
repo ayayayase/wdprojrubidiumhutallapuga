@@ -11,7 +11,7 @@ html, body{
   align-items: center;
   background-image: url("https://i.bandori.party/u/c/art/a/4905Eve-Wakamiya-Pure-Filled-With-Gratitude-and-Joy-UYQS0P.png");
 background-repeat: no-repeat;
-  
+  background-size: cover;
 }
 
 body {
@@ -33,14 +33,11 @@ body {
 
 
 #logo {
-  position: absolute;
-  display: block;
+  position:relative;
   margin: 0;
   height: auto;
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  flex:1;
+
 }
 
 #btnstrt, #btnstudio {
@@ -56,6 +53,12 @@ body {
   filter: brightness(80%);
 }
 
+#btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @font-face{
   font-family:arcadealternate;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
@@ -63,11 +66,14 @@ body {
 
 #top {
   position: relative;
-  top: -2px;
+  
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   z-index: 1000;
   font-family: arcadealternate;
   color: #824ced;
-  flex:1;
 }
 
 footer {
@@ -100,5 +106,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: relative;
+  bottom: 20px;
 }

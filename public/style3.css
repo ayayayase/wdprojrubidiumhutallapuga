@@ -9,6 +9,9 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("https://i.bandori.party/u/c/art/a/4905Eve-Wakamiya-Pure-Filled-With-Gratitude-and-Joy-UYQS0P.png");
+background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -210,4 +213,12 @@ footer {
   top: 0;
   left: 0;
   flex:1;
+}
+
+#homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
 }
