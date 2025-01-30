@@ -38,7 +38,6 @@ body {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  top: -165px;
   flex:1;
 }
 
@@ -49,13 +48,6 @@ body {
   height: auto;
   width: 350px;
   flex:1;
-}
-
-#btnstrt {
-left: -75px;}
-
-#btnstudio {
-  right: -75px;
 }
 
 #btnstrt:hover, #btnstudio:hover{
