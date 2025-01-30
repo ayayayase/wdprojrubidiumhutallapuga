@@ -30,18 +30,6 @@ body {
   margin-right: 0;
 }
 
-
-
-#logo {
-  position:relative;
-  bottom: 180px;
-  text-align: center;
-  margin: 0;
-  height: auto;
-  width: 850px;
-
-}
-
 #btnstrt, #btnstudio {
   position: relative;
   z-index: 1000;
@@ -101,4 +89,16 @@ footer {
   align-items: center;
   position: relative;
   bottom: 25px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  z-index: 1000;
+  position: relative;
+  left: 50%;
 }
