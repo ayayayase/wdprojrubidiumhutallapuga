@@ -32,20 +32,24 @@ body {
   flex:1;
 }
 
+#btnback1, #btnstudio {
+  max-width: 500px;
+  max-height: 500px;
+  width: 200px;
+  height: auto;
+  grid-row: 1;
+  position: relative;
+  top: 100%;
+}
 
 #btnback1 {
-   position: absolute;
-  z-index: 1000;
-  top: 500px;
-height: auto;
-  width: 180px;
-  filter: drop-shadow(20px 10px 0px black);
-    left: 10px;
+  padding-right: 1300px;
 }
 
 
 #btnback1:hover {
   filter: brightness(80%);
+  cursor: pointer;
 }
 
 @font-face{

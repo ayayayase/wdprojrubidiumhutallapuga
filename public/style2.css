@@ -143,5 +143,11 @@ width: auto;
   max-height: 500px;
   width: 200px;
   height: auto;
-  
+  grid-row: 1;
+  position: relative;
+  top: 100%;
+}
+
+#btnback1 {
+  padding-right: 1100px;
 }
