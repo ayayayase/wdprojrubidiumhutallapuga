@@ -119,3 +119,7 @@ padding-left: 40px;
   position: relative;
   bottom: 45%;
 }
+
+#btnback1, #btnstudio {
+  z-index: 1003;
+}

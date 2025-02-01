@@ -20,10 +20,6 @@ body {
   flex-direction:column;
 }
 
-#btnback1:hover, #btnstudio:hover{
-  filter: brightness(80%);
-}
-
 @font-face{
   font-family:arcadealternate;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
@@ -137,4 +133,15 @@ width: auto;
   right: 220px;
 }
 
-#btn
+#nav {
+  z-index: 1000;
+  display: grid;
+}
+
+#btnback1, #btnstudio {
+  max-width: 500px;
+  max-height: 500px;
+  width: 200px;
+  height: auto;
+  
+}
