@@ -59,7 +59,9 @@ footer {
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-
+ width: 1350px;
+  height: 759px;
+  margin: 0;
 }
 
 #scrn {
@@ -82,8 +84,20 @@ transform: translate(-50%, -50%);
   position: relative;
   max-width: 1350px;
   max-height: 759px;
+  position: relative;
+width: 1200;
+  height: auto;
+  margin: auto;
+  bottom: 18%;
 }
 
 #btnstart, #btnstudio {
 padding: 80px;
+  z-index: 1000;
+}
+
+#btns {
+  margin: auto;
+  width: 1200;
+  height: auto;
 }
