@@ -77,7 +77,8 @@ z-index: 999;
   position: relative;
   height: auto;
   width: 1200px;
-  bottom: 100%;
+  bottom: 135%;
+  margin: auto;
 }
 
 #dialogue {
@@ -108,16 +109,7 @@ z-index: 999;
   font-family: arcadealternate;
   color: white;
   font-size: 30px;
-  position: absolute;
-  left: 270px;
-}
-
-#changename {
-    top: 120px;
-}
-
-#changebackground {
-  top: 170px;
+  position: relative;
 }
 
 #changedialogue {
@@ -130,14 +122,19 @@ z-index: 999;
     right: 300px;
 }
 
+#changename, #changebackground {
+  z-index: 1000;
+  
+}
 #hideshow {
    z-index: 1000;
   font-size: 60px;
-   position: absolute;
-  top: 20px;
-    left: 270px;
+   position: relative;
+  bottom: 920%;
+    left: 13%;
   font-family: arcadealternate;
   color:white;
+  padding-bottom: -100px;
 }
 
 #showhide {
