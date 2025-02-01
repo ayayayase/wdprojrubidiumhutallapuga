@@ -74,10 +74,10 @@ body {
 
 #dialoguebox {
 z-index: 999;
-  position: absolute;
+  position: relative;
   height: auto;
   width: 1200px;
-  bottom: -10px;
+  bottom: 100%;
 }
 
 #dialogue {
@@ -99,8 +99,7 @@ z-index: 999;
   position: absolute;
   font-size: 35px;
   font-family: arcadealternate;
-  top: 490px;
-  left: 450px;
+ margin: auto;
   color: #ad8cff;
 }
 
@@ -145,8 +144,8 @@ z-index: 999;
    z-index: 1000;
   font-size: 60px;
    position: absolute;
-  top: 20px;
-    left: 270px;
+  top: 10%
+    left: 50%;
   font-family: arcadealternate;
   color:white;
   display:none;
