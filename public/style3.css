@@ -44,8 +44,8 @@ body {
 #title {
   z-index: 1000;
   position: relative;
-  bottom: 500%;
-  left: 100%;
+  bottom: 300%;
+  left: 62%;
   font-family: plank;
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
@@ -58,8 +58,8 @@ body {
   z-index:1000;
   font-family: arcadealternate;
   font-size: 25px;
-  top: 60px;
-  right: 300px;
+  top: 8.5%;
+  right: 15%;
   color: #F862FF;
 }
 
@@ -68,8 +68,8 @@ body {
   height: auto;
   width: 400px;
   position: absolute;
-  top: 55px;
-  right: 250px;
+  top: 8%;
+  right: 13%;
 }
 
 #dialoguebox {
@@ -224,4 +224,11 @@ transform: translate(-50%, -50%);
   margin: auto;
   position: relative;
   bottom: 45%;
+}
+
+#btnback1 {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 1006;
 }
