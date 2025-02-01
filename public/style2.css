@@ -34,35 +34,6 @@ body {
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
 }
 
-#title {
-  z-index: 1000;
-  position: absolute;
-  font-family: plank;
-  color: #b999fa;
-  -webkit-text-stroke: 0.5px #814beb;
-  font-size: 80px;
-  top: 40px;
-  right: 280px;
-}
-
-#caption {
-  position: absolute;
-  z-index:1000;
-  font-family: arcadealternate;
-  font-size: 25px;
-  top: 80px;
-  right: 280px;
-  color: #F862FF;
-}
-
-#hrtlndecor {
-  z-index: 1000;
-  height: auto;
-  width: 400px;
-  position: relative;
-  top: 5%;
-}
-
 footer {
   z-index:1000;
   color:#824ced;
@@ -103,7 +74,7 @@ transform: translate(-50%, -50%);
   margin: 0;
 }
 
-#scrn, #logo, #btns, #top{
+#scrn, #logo, #top{
  grid-column: 1;
   grid-row: 1;
 }
@@ -120,24 +91,8 @@ width: auto;
   bottom: 20%;
 }
 
-#btnstrt {
-padding-right: 40px;
- max-width: 500px;
-  max-height: 500px;
-  width: auto;
-  height: 450px;
-}
 
-#btnstudio {
-padding-left: 40px;
-  max-width: 500px;
-  max-height: 500px;
-  width: auto;
-  height: 450px;
-}
-
-
-#btnstrt:hover, #btnstudio:hover{
+#btnback1:hover, #btnstudio:hover{
   filter: brightness(80%);
   cursor: pointer;
 }
@@ -150,3 +105,36 @@ padding-left: 40px;
   position: relative;
   bottom: 45%;
 }
+
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 40px;
+  right: 180px;
+}
+
+#caption {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 80px;
+  right: 185px;
+  color: #F862FF;
+}
+
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 40px;
+  right: 220px;
+}
+
+#btn
