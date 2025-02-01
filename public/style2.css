@@ -20,36 +20,6 @@ body {
   flex-direction:column;
 }
 
-
-#scrn {
-  position: absolute;
-  display: block;
-  margin: 0;
-  height: auto;
-  width: 1315px;
-  margin-left: auto;
-  margin-right: auto;
-  flex:1;
-}
-
-
-#btnback1, #btnstudio {
-  position: absolute;
-  z-index: 1000;
-  top: 500px;
-height: auto;
-  width: 180px;
-  filter: drop-shadow(20px 10px 0px black);
-}
-
-#btnback1 {
-  left: 10px;
-}
-
-#btnstudio {
-  right: 30px;
-}
-
 #btnback1:hover, #btnstudio:hover{
   filter: brightness(80%);
 }
@@ -57,14 +27,6 @@ height: auto;
 @font-face{
   font-family:arcadealternate;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
-}
-
-#top {
-  position: absolute;
-  top: -2px;
-  z-index: 1000;
-  font-family: arcadealternate;
-  color: #824ced;
 }
 
 @font-face {
@@ -97,9 +59,8 @@ height: auto;
   z-index: 1000;
   height: auto;
   width: 400px;
-  position: absolute;
-  top: 40px;
-  right: 330px;
+  position: relative;
+  top: 5%;
 }
 
 footer {
@@ -118,12 +79,74 @@ footer {
   font-size: 11px;
 }
 
-#bgimg {
-   width: 100%;
+
+#homepage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+ width: 1350px;
+  height: 759px;
+  margin: 0;
+}
+
+#scrn {
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
+  max-height: 759px;
+  display: block;
   height: 100%;
-  object-fit: cover;  
-  position: absolute; 
-  top: 0;
-  left: 0;
-  flex:1;
+  margin: 0;
+}
+
+#scrn, #logo, #btns, #top{
+ grid-column: 1;
+  grid-row: 1;
+}
+
+#logo {
+  z-index: 999;
+  position: relative;
+  max-width: 1350px;
+  max-height: 759px;
+  position: relative;
+width: auto;
+  height: 700px;
+  margin: auto;
+  bottom: 20%;
+}
+
+#btnstrt {
+padding-right: 40px;
+ max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
+
+#btnstudio {
+padding-left: 40px;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
+
+
+#btnstrt:hover, #btnstudio:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+#top {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: relative;
+  bottom: 45%;
 }

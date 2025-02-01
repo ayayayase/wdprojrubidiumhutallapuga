@@ -21,6 +21,7 @@ body {
 }
 
 #btns {
+  z-index: 1001;
   position: relative;
   top: 25%;
   justify-content: center;
@@ -77,7 +78,7 @@ transform: translate(-50%, -50%);
 }
 
 #logo {
-  z-index: 100;
+  z-index: 999;
   position: relative;
   max-width: 1350px;
   max-height: 759px;
@@ -90,7 +91,6 @@ width: auto;
 
 #btnstrt {
 padding-right: 40px;
-  z-index: 1000;
  max-width: 500px;
   max-height: 500px;
   width: auto;
@@ -99,8 +99,7 @@ padding-right: 40px;
 
 #btnstudio {
 padding-left: 40px;
-  z-index: 1000;
-   max-width: 500px;
+  max-width: 500px;
   max-height: 500px;
   width: auto;
   height: 450px;
@@ -109,4 +108,14 @@ padding-left: 40px;
 
 #btnstrt:hover, #btnstudio:hover{
   filter: brightness(80%);
+  cursor: pointer;
+}
+
+#top {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: relative;
+  bottom: 45%;
 }
