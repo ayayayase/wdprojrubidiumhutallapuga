@@ -52,17 +52,29 @@ footer {
 }
 
 #homepage {
+  display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;
-  
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
 }
 
 #scrn {
-   max-width: 1060px;
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
   max-height: 759px;
   display: block;
   height: 100%;
   margin: 0;
+  position: relative;
+  bottom: 10%;
 }
 
+#scrn, #logo, #btns { 
+ grid-column: 1;
+  grid-row: 1;
+}
