@@ -70,11 +70,20 @@ transform: translate(-50%, -50%);
   display: block;
   height: 100%;
   margin: 0;
-  position: relative;
-  bottom: 10%;
 }
 
-#scrn, #logo, #btns { 
+#scrn, #logo, #btns, #top{
  grid-column: 1;
   grid-row: 1;
+}
+
+#logo {
+  z-index: 100;
+  position: relative;
+  max-width: 1350px;
+  max-height: 759px;
+}
+
+#btnstart, #btnstudio {
+padding: 80px;
 }
