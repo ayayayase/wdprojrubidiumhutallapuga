@@ -105,11 +105,9 @@ z-index: 999;
 }
 
 #changename, #changebackground {
-  z-index: 999;
   font-family: arcadealternate;
   color: white;
   font-size: 30px;
-  position: relative;
 }
 
 #changedialogue {
@@ -122,19 +120,29 @@ z-index: 999;
     right: 300px;
 }
 
-#changename, #changebackground {
-  z-index: 1000;
-  
-}
-#hideshow {
+#hideshow, #showhide{
    z-index: 1000;
   font-size: 60px;
    position: relative;
-  bottom: 920%;
+  bottom: 870%;
     left: 13%;
   font-family: arcadealternate;
   color:white;
-  padding-bottom: -100px;
+  padding-bottom: 10px;
+}
+
+#changename {
+  z-index: 1000;
+   position: relative;
+  bottom: 1730px;
+    left: 13%;
+}
+
+#changebackground {
+  z-index: 1000;
+   position: relative;
+  bottom: 1770px;
+    left: 13%;
 }
 
 #showhide {
@@ -150,6 +158,7 @@ z-index: 999;
 
 #changename:hover, #changebackground:hover, #changedialogue:hover, #hideshow:hover, #showhide:hover{
   filter: brightness(80%);
+  cursor: pointer;
 }
 
 #dialogueinput {
