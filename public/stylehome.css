@@ -20,14 +20,11 @@ body {
   flex-direction:column;
 }
 
-#btnstrt:hover, #btnstudio:hover{
-  filter: brightness(80%);
-}
-
 #btns {
-  display: flex;
+  position: relative;
+  top: 25%;
   justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 @font-face{
@@ -85,19 +82,31 @@ transform: translate(-50%, -50%);
   max-width: 1350px;
   max-height: 759px;
   position: relative;
-width: 1200;
-  height: auto;
+width: auto;
+  height: 700px;
   margin: auto;
-  bottom: 18%;
+  bottom: 20%;
 }
 
-#btnstart, #btnstudio {
-padding: 80px;
+#btnstrt {
+padding-right: 40px;
   z-index: 1000;
+ max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
 }
 
-#btns {
-  margin: auto;
-  width: 1200;
-  height: auto;
+#btnstudio {
+padding-left: 40px;
+  z-index: 1000;
+   max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
+
+
+#btnstrt:hover, #btnstudio:hover{
+  filter: brightness(80%);
 }
