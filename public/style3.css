@@ -113,7 +113,7 @@ z-index: 999;
   font-size: 40px;
   position: absolute;
   top: 375px;
-    right: 300px;
+    right: 180px;
 }
 
 #hideshow{
@@ -127,29 +127,29 @@ z-index: 999;
   padding-bottom: 10px;
 }
 
+#showhide {
+   z-index: 1000;
+  font-size: 60px;
+   position: relative;
+  bottom: 1025%;
+    left: 13%;
+  font-family: arcadealternate;
+  color:white;
+  visibility: hidden;
+}
+
 #changename {
   z-index: 1000;
    position: relative;
-  bottom: 1730px;
+  bottom: 1900px;
     left: 13%;
 }
 
 #changebackground {
   z-index: 1000;
    position: relative;
-  bottom: 1770px;
+  bottom: 1920px;
     left: 13%;
-}
-
-#showhide {
-   z-index: 1000;
-  font-size: 60px;
-   position: absolute;
-  top: 10%
-    left: 50%;
-  font-family: arcadealternate;
-  color:white;
-  display:none;
 }
 
 #changename:hover, #changebackground:hover, #changedialogue:hover, #hideshow:hover, #showhide:hover{
@@ -163,7 +163,7 @@ z-index: 999;
   height: 50px;
    position: absolute;
   top: 350px;
-    right: 325px;
+    right: 200px;
 }
 
 footer {
