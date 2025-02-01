@@ -57,8 +57,10 @@ footer {
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
- width: 1350px;
-  height: 759px;
+  max-width: 1350px;
+  max-height: 759px;
+ width: auto;
+  height: 100vh;
   margin: 0;
 }
 
