@@ -20,25 +20,6 @@ body {
   flex-direction:column;
 }
 
-#scrn {
-  position: absolute;
-  display: block;
-  margin: 0;
-  height: auto;
-  width: 1615px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#btnstrt, #btnstudio {
-  position: relative;
-  z-index: 1000;
-  top: 200px;
-  height: auto;
-  width: 350px;
-  flex:1;
-}
-
 #btnstrt:hover, #btnstudio:hover{
   filter: brightness(80%);
 }
@@ -52,19 +33,6 @@ body {
 @font-face{
   font-family:arcadealternate;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
-}
-
-#top {
-  position: relative;
-  
- display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  margin: 0;
-  z-index: 1000;
-  font-family: arcadealternate;
-  color: #824ced;
 }
 
 footer {
@@ -84,21 +52,17 @@ footer {
 }
 
 #homepage {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 25px;
+  
 }
 
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#scrn {
+   max-width: 1060px;
+  max-height: 759px;
+  display: block;
+  height: 100%;
+  margin: 0;
 }
 
-#logo {
-  z-index: 1000;
-  position: relative;
-  left: 50%;
-}
