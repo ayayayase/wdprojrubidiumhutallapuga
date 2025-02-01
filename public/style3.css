@@ -81,10 +81,6 @@ z-index: 999;
   margin: auto;
 }
 
-#dialogue {
-  z-index: 999;
-}
-
 #name {
   z-index: 999;
   position: absolute;
@@ -120,7 +116,7 @@ z-index: 999;
     right: 300px;
 }
 
-#hideshow, #showhide{
+#hideshow{
    z-index: 1000;
   font-size: 60px;
    position: relative;

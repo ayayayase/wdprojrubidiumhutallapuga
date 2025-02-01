@@ -29,22 +29,22 @@ const ids = [
  
 //button to hide the other elements (for when user wants a clearer screen)
 document.getElementById("hideshow").onclick = function hide () {
-  document.getElementById("hideshow").style.display = "none";
+  document.getElementById("hideshow").style.visibility = "hidden";
   
   for (let i = 0; i < ids.length; i++) {
-  document.getElementById(ids[i]).style.display = "none";
+  document.getElementById(ids[i]).style.visibility = "hidden";
 }
   
-document.getElementById("showhide").style.display = "inline";
+document.getElementById("showhide").style.visibility = "visible";
 }
 
 //buttons to show the elements back
 document.getElementById("showhide").onclick = function hide () {
-  document.getElementById("showhide").style.display = "none";
+  document.getElementById("showhide").style.visibility = "hidden";
   
     for (let i = 0; i < ids.length; i++) {
-  document.getElementById(ids[i]).style.display = "inline";
+  document.getElementById(ids[i]).style.visibility = "visible";
 }
   
-document.getElementById("hideshow").style.display = "inline";
+document.getElementById("hideshow").style.visibility = "visible";
 }
