@@ -86,7 +86,7 @@ z-index: 999;
   position: absolute;
   font-size: 55px;
   font-family: arcadealternate;
-  top: 389px;
+  top: 400px;
   left: 450px;
   color: #ad8cff;
 }
@@ -97,6 +97,8 @@ z-index: 999;
   font-size: 35px;
   font-family: arcadealternate;
  margin: auto;
+  top: 530px;
+  left: 330px;
   color: #ad8cff;
 }
 
