@@ -104,7 +104,7 @@ width: auto;
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
   font-size: 80px;
-  top: 80px;
+  top: 100px;
   right: 180px;
 }
 
@@ -113,7 +113,7 @@ width: auto;
   z-index:1000;
   font-family: arcadealternate;
   font-size: 25px;
-  top: 80px;
+  top: 100px;
   right: 185px;
   color: #F862FF;
 }
@@ -153,4 +153,22 @@ width: auto;
 
 #homepage * {
   margin: auto;
+}
+
+.main {
+  z-index: 1007;
+  max-height: 759px;
+  max-width: auto;
+  height: 759px;
+  width: auto;
+}
+
+#doll {
+  max-height: 759px;
+  max-width: auto;
+  height: 650px;
+  width: auto;
+  position: relative;
+  bottom: 700px;
+  right: 270px;
 }
