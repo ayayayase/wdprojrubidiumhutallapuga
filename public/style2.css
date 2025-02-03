@@ -172,3 +172,13 @@ width: auto;
   bottom: 700px;
   right: 270px;
 }
+
+#dressupbutton {
+  max-height: 759px;
+  max-width: auto;
+  height: 650px;
+  width: auto;
+  position: relative;
+  bottom: 700px;
+  right: 270px;
+}
