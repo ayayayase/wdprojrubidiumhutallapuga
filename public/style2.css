@@ -174,11 +174,11 @@ width: auto;
 }
 
 #dressupbutton {
-  max-height: 759px;
+  max-height: 100px;
   max-width: auto;
-  height: 650px;
+  height: 100px;
   width: auto;
   position: relative;
-  bottom: 700px;
-  right: 270px;
+  bottom: 800px;
+  right: 700px;
 }
