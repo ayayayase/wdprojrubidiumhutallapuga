@@ -203,17 +203,26 @@ width: auto;
 #topbutton {
   z-index: 1000;
   height: auto;
-  width: 200px;
+  width: 220px;
   position: absolute;
-  top: 280px;
-  right: 380px;
+  top: 285px;
+  right: 370px;
 }
 
 #bottombutton {
   z-index: 1000;
   height: auto;
-  width: 200px;
+  width: 220px;
   position: absolute;
   top: 380px;
-  right: 380px;
+  right: 370px;
+}
+
+#shoesbutton {
+  z-index: 1000;
+  height: auto;
+  width: 200px;
+  position: absolute;
+  top: 470px;
+  right: 370px;
 }
