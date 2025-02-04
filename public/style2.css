@@ -167,7 +167,7 @@ width: auto;
   max-height: 759px;
   max-width: auto;
   height: 610px;
-  width: auto;
+  width: 465px;
   position: relative;
   bottom: 695px;
   right: 270px;
@@ -209,13 +209,11 @@ height: auto;
    max-height: 759px;
   max-width: auto;
   height: 610px;
-  width: auto;
-  position: absolute;
-  bottom: 695px;
+  width: 465px;
+  position: relative;
+  bottom: 1318px;
   right: 270px;
    z-index: 1104;
-  background-color:red;
-   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face1.png?v=1738158934500");
 }
 
 #bh {
