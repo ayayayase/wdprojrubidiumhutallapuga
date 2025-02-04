@@ -155,25 +155,27 @@ width: auto;
   margin: auto;
 }
 
-.main {
+#main {
   z-index: 1007;
   max-height: 759px;
   max-width: auto;
   height: 610px;
   width: 465px;
-  display: inline-block;
   position: relative;
+  bottom: 695px;
+  right: 270px;
 }
 
 #doll {
-  max-height: 759px;
-  max-width: auto;
-  height: 610px;
-  width: 465px;
-  position: absolute;
-  bottom: 695px;
-  right: 270px;
   z-index: 1100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dl {
+    height: 610px;
+  width: 465px;
 }
 
 #facebutton,#shoesbutton,#topbutton, #backhairbutton, #bottombutton, #fronthairbutton {
@@ -208,10 +210,12 @@ height: auto;
 }
 
 #face{
-  position: absolute;
+  width: 465px;
+  height: 610px;
    z-index: 1104;
-  background-color: red;
-  opacity: 0.5;
+   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #bh {
@@ -227,13 +231,11 @@ height: auto;
 }
 
 #top {
-   max-height: 759px;
-  max-width: auto;
-  height: 610px;
   width: 465px;
-  position: relative;
-  bottom: 1318px;
-  right: 270px;
+  height: 610px;
+   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1103;
 }
 
@@ -263,7 +265,23 @@ height: auto;
 .face2,
 .face3,
 .face4,
-.face5 {
+.face5, .top1, .top2, .top3, .top4, .top5{
    background-size: cover;
         background-repeat: no-repeat;
+}
+
+.top1 {
+  background-image: url("");
+}
+
+.top2 {
+  background-image: url("");
+}
+
+.top3 {
+  background-image: url("");
+}
+
+.top1 {
+  background-image: url("");
 }
