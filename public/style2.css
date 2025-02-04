@@ -206,5 +206,14 @@ width: auto;
   width: 200px;
   position: absolute;
   top: 280px;
-  right: 300px;
+  right: 380px;
+}
+
+#bottombutton {
+  z-index: 1000;
+  height: auto;
+  width: 200px;
+  position: absolute;
+  top: 380px;
+  right: 380px;
 }
