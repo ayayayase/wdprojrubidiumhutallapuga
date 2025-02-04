@@ -166,11 +166,12 @@ width: auto;
 #doll {
   max-height: 759px;
   max-width: auto;
-  height: 650px;
+  height: 620px;
   width: auto;
   position: relative;
-  bottom: 700px;
+  bottom: 710px;
   right: 270px;
+  z-index: 1100;
 }
 
 #facebutton,#shoesbutton,#topbutton, #backhairbutton, #bottombutton, #fronthairbutton {
@@ -204,6 +205,58 @@ height: auto;
   border: 1px solid red;
 }
 
+#bh, #fh, #top, #bottom, #face, #shoes {
+   max-height: 759px;
+  max-width: auto;
+  height: 60px;
+  width: auto;
+  position: relative;
+  bottom: 710px;
+  right: 270px;
+}
+
+#bh {
+  z-index: 1099;
+}
+
+#shoes {
+  z-index: 1101;
+}
+
+#bottom {
+  z-index: 1102;
+}
+
+#top {
+  z-index: 1103;
+}
+
+#face {
+  z-index: 1104;
+}
+
+#fh {
+  z-index: 1105;
+}
+
+.face1 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face1.png?v=1738158934500");
+}
+.face2 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face2.png?v=1738158940231");
+}
+.face3 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face3.png?v=1738158941920");
+}
+
+.face4 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face4.png?v=1738158945372");
+}
+
+.face5 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face5.png?v=1738158949357");
+}
+
 .face1
 .face2
 .face3
@@ -212,5 +265,3 @@ height: auto;
    background-size: cover;
         background-repeat: no-repeat;
 }
-
-#bh, #fh, #
