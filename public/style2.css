@@ -227,15 +227,22 @@ width: auto;
   right: 370px;
 }
 
-#facebutton, #topbutton,{
-  z-index: 1009;
-  padding: 100px;
+#facebutton,#shoesbutton,#topbutton, #backhairbutton, #bottombutton, #fronthairbutton {
+width: 270px;
+height: auto;
+   z-index: 1050;
 }
-#bottombutton, #fronthairbutton {
-  z-index: 1010;
-  padding: 100px;
+
+#buttons {
+  max-height: 759px;
+  max-width: 759px;
 }
-#facebutton:hover, #bottombutton:hover, #shoesbutton:hover, #topbutton:hover, #backhairbutton:hover, #fronthairbutton:hover {
-   filter: brightness(80%);
+
+#facebutton:hover ,#shoesbutton:hover ,#topbutton:hover, #backhairbutton:hover, #bottombutton:hover, #fronthairbutton:hoved {
+  filter: brightness(80%);
   cursor: pointer;
+}
+
+#buttons {
+  z-index: 1050;
 }
