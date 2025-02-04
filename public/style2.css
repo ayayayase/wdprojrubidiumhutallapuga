@@ -166,10 +166,10 @@ width: auto;
 #doll {
   max-height: 759px;
   max-width: auto;
-  height: 620px;
+  height: 610px;
   width: auto;
   position: relative;
-  bottom: 710px;
+  bottom: 695px;
   right: 270px;
   z-index: 1100;
 }
@@ -208,10 +208,10 @@ height: auto;
 #bh, #fh, #top, #bottom, #face, #shoes {
    max-height: 759px;
   max-width: auto;
-  height: 60px;
+  height: 610px;
   width: auto;
   position: relative;
-  bottom: 710px;
+  bottom: 695px;
   right: 270px;
 }
 
