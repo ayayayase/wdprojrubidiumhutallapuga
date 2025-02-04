@@ -87,7 +87,7 @@ width: auto;
   bottom: 20%;
 }
 
-#top {
+#namez {
   font-family: arcadealternate;
   color: white;
   z-index: 1000;
@@ -205,14 +205,17 @@ height: auto;
   border: 1px solid red;
 }
 
-#bh, #fh, #top, #bottom, #face, #shoes {
+#face{
    max-height: 759px;
   max-width: auto;
   height: 610px;
   width: auto;
-  position: relative;
+  position: absolute;
   bottom: 695px;
   right: 270px;
+   z-index: 1104;
+  background-color:red;
+   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face1.png?v=1738158934500");
 }
 
 #bh {
@@ -229,10 +232,6 @@ height: auto;
 
 #top {
   z-index: 1103;
-}
-
-#face {
-  z-index: 1104;
 }
 
 #fh {
@@ -257,10 +256,10 @@ height: auto;
   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/face5.png?v=1738158949357");
 }
 
-.face1
-.face2
-.face3
-.face4
+.face1,
+.face2,
+.face3,
+.face4,
 .face5 {
    background-size: cover;
         background-repeat: no-repeat;
