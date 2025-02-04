@@ -159,8 +159,10 @@ width: auto;
   z-index: 1007;
   max-height: 759px;
   max-width: auto;
-  height: 759px;
-  width: auto;
+  height: 610px;
+  width: 465px;
+  display: inline-block;
+  position: relative;
 }
 
 #doll {
@@ -168,7 +170,7 @@ width: auto;
   max-width: auto;
   height: 610px;
   width: 465px;
-  position: relative;
+  position: absolute;
   bottom: 695px;
   right: 270px;
   z-index: 1100;
@@ -206,14 +208,10 @@ height: auto;
 }
 
 #face{
-   max-height: 759px;
-  max-width: auto;
-  height: 610px;
-  width: 465px;
-  position: relative;
-  bottom: 1318px;
-  right: 270px;
+  position: absolute;
    z-index: 1104;
+  background-color: red;
+  opacity: 0.5;
 }
 
 #bh {
@@ -229,6 +227,13 @@ height: auto;
 }
 
 #top {
+   max-height: 759px;
+  max-width: auto;
+  height: 610px;
+  width: 465px;
+  position: relative;
+  bottom: 1318px;
+  right: 270px;
   z-index: 1103;
 }
 
