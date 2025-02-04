@@ -203,7 +203,7 @@ width: auto;
 #topbutton {
   z-index: 1000;
   height: auto;
-  width: 220px;
+  width: 200px;
   position: absolute;
   top: 285px;
   right: 370px;
@@ -212,7 +212,7 @@ width: auto;
 #bottombutton {
   z-index: 1000;
   height: auto;
-  width: 220px;
+  width: 200px;
   position: absolute;
   top: 380px;
   right: 370px;
@@ -223,6 +223,19 @@ width: auto;
   height: auto;
   width: 200px;
   position: absolute;
-  top: 470px;
+  top: 460px;
   right: 370px;
+}
+
+#facebutton, #topbutton,{
+  z-index: 1009;
+  padding: 100px;
+}
+#bottombutton, #fronthairbutton {
+  z-index: 1010;
+  padding: 100px;
+}
+#facebutton:hover, #bottombutton:hover, #shoesbutton:hover, #topbutton:hover, #backhairbutton:hover, #fronthairbutton:hover {
+   filter: brightness(80%);
+  cursor: pointer;
 }
