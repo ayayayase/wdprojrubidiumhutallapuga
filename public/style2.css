@@ -173,76 +173,30 @@ width: auto;
   right: 270px;
 }
 
-#facebutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 280px;
-  right: 180px;
-}
-
-#fronthairbutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 380px;
-  right: 180px;
-}
-
-#backhairbutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 460px;
-  right: 180px;
-}
-
-#topbutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 285px;
-  right: 370px;
-}
-
-#bottombutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 380px;
-  right: 370px;
-}
-
-#shoesbutton {
-  z-index: 1000;
-  height: auto;
-  width: 200px;
-  position: absolute;
-  top: 460px;
-  right: 370px;
-}
-
 #facebutton,#shoesbutton,#topbutton, #backhairbutton, #bottombutton, #fronthairbutton {
-width: 270px;
+width: 200px;
 height: auto;
    z-index: 1050;
+  
 }
 
 #buttons {
   max-height: 759px;
   max-width: 759px;
+  z-index: 1050;
+  height: 0px;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, auto); 
+  gap: 10px;
 }
 
-#facebutton:hover ,#shoesbutton:hover ,#topbutton:hover, #backhairbutton:hover, #bottombutton:hover, #fronthairbutton:hoved {
+#facebutton:hover ,#shoesbutton:hover ,#topbutton:hover, #backhairbutton:hover, #bottombutton:hover, #fronthairbutton:hover {
   filter: brightness(80%);
   cursor: pointer;
 }
 
-#buttons {
-  z-index: 1050;
+* {
+  border: 1px solid red;
 }
