@@ -190,6 +190,9 @@ height: auto;
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(3, auto); 
   gap: 10px;
+  position: relative;
+  left: 250px;
+  top: 20px;
 }
 
 #facebutton:hover ,#shoesbutton:hover ,#topbutton:hover, #backhairbutton:hover, #bottombutton:hover, #fronthairbutton:hover {
@@ -200,3 +203,14 @@ height: auto;
 * {
   border: 1px solid red;
 }
+
+.face1
+.face2
+.face3
+.face4
+.face5 {
+   background-size: cover;
+        background-repeat: no-repeat;
+}
+
+#bh, #fh, #
