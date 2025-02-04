@@ -172,3 +172,21 @@ width: auto;
   bottom: 700px;
   right: 270px;
 }
+
+#facebutton {
+  z-index: 1000;
+  height: auto;
+  width: 200px;
+  position: absolute;
+  top: 260px;
+  right: 180px;
+}
+
+#fronthairbutton {
+  z-index: 1000;
+  height: auto;
+  width: 200px;
+  position: absolute;
+  top: 260px;
+  right: 180px;
+}
