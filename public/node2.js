@@ -8,7 +8,7 @@ document.getElementById("btnstudio").onclick = function () {
   location.href = "page3.html";
 }
 
-let state = {face: 1, top: 1, bottom: 1, fh: 1}
+let state = {face: 1, top: 1, bottom: 1, fh: 1, bh: 1}
 
 function nextface() {
   console.log("faceworks");
@@ -67,5 +67,20 @@ function nextfh() {
   else if (state.fh == 8) {
     state.fh = 1;
     fh.setAttribute("class", `fh${state.fh}`);
+  }
+}
+
+function nextbh() {
+   console.log("bhworks");
+  
+  let bh = document.querySelector("#bh");
+  
+  if (state.bh < 8) {
+    state.bh++;
+    bh.setAttribute("class", `bh${state.bh}`);
+  }
+  else if (state.bh == 8) {
+    state.bh = 1;
+    bh.setAttribute("class", `bh${state.bh}`);
   }
 }

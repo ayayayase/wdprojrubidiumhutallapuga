@@ -244,3 +244,27 @@ transform: translate(-50%, -50%);
   position: relative;
   bottom: 2.7%;
 }
+
+#main {
+  z-index: 1007;
+  max-height: 759px;
+  max-width: auto;
+  height: 610px;
+  width: 465px;
+  position: relative;
+  bottom: 695px;
+  right: 270px;
+}
+
+#doll {
+  z-index: 1100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#dl {
+    height: 610px;
+  width: 465px;
+}
+
