@@ -25,8 +25,9 @@ body {
   color: white;
   z-index: 1000;
   margin: auto;
-  position: relative;
-  bottom: 45%;
+  position: absolute;
+  bottom: 93.5%;
+  left: 38.3%;
 }
 
 #btnback1 {
@@ -52,7 +53,8 @@ body {
 
 #title {
   z-index: 1000;
-  position: relative;
+  position: absolute;
+  margin: 0;
   font-family: plank;
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
@@ -195,15 +197,17 @@ footer {
 
 
 #homepage {
- display: grid;
+  display: grid;
   justify-content: center;
   align-items: center;
   position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
- width: 1350px;
-  height: 759px;
+  max-width: 1350px;
+  max-height: 759px;
+ width: auto;
+  height: 100vh;
   margin: 0;
 }
 
