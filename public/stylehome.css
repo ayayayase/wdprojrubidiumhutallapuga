@@ -68,9 +68,11 @@ transform: translate(-50%, -50%);
    max-width: 1350px;
   max-height: 759px;
   display: block;
-  height: 100vh;
-  width: auto;
+  height: 100%;
   margin: 0;
+}
+#homepage * {
+margin: 0;
 }
 
 #scrn, #logo, #btns, #top{
@@ -83,10 +85,12 @@ transform: translate(-50%, -50%);
   position: absolute;
   max-width: 1350px;
   max-height: 759px;
-  position: relative;
+  position: absolute;
 width: auto;
   height: 700px;
   margin: auto;
+  left: 320px;
+  bottom: 300px;
 }
 
 #btnstrt {

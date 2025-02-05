@@ -122,6 +122,7 @@ width: auto;
   z-index: 1000;
   height: auto;
   width: 400px;
+  max-height: 200px;
   position: absolute;
   top: 40px;
   right: 220px;
@@ -129,7 +130,7 @@ width: auto;
 
 #nav {
   z-index: 1000;
-  display: grid;
+max-height: 0px;
 }
 
 #btnback1, #btnstudio {
@@ -183,7 +184,7 @@ width: auto;
 #facebutton,#shoesbutton,#topbutton, #backhairbutton, #bottombutton, #fronthairbutton {
 width: 200px;
 height: auto;
-   z-index: 1050;
+   z-index: 2000;
   
 }
 
