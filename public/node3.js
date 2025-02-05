@@ -88,11 +88,11 @@ function changebg() {
   let bg = document.querySelector("#bg");
   
   if (state < 8) {
-    state ++;
+    state++;
     bg.setAttribute("class", `bg${state}`);
   }
   else if (state == 8) {
-    state.bg = 1;
+    state = 1;  
     bg.setAttribute("class", `bg${state}`);
   }
 }
