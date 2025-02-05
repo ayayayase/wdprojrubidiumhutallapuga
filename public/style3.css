@@ -291,8 +291,8 @@ margin: auto;
    position: absolute;
   top: 0;
   left: 0;
-  z-index: 1099;
-  background-image: 1px solid red;
+  z-index: 1200;
+  border: 1px solid red;
 }
 
 #shoes {
@@ -432,6 +432,9 @@ margin: auto;
 .fh7 {
   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083308.png?v=1738715869111");
 }
+
+
+
 
 .bh1 {
   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083253.png?v=1738728888374");
