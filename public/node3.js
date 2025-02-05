@@ -59,11 +59,13 @@ window.onload = function () {
     let top = document.getElementById("top");
     let bottom = document.getElementById("bottom");
     let fh = document.getElementById("fh");
+    let bh = document.getElementById("bh");
 
     face.setAttribute("class", `face${savedState.face}`);
     top.setAttribute("class", `top${savedState.top}`);
     bottom.setAttribute("class", `bottom${savedState.bottom}`);
     fh.setAttribute("class", `fh${savedState.fh}`);
+     bh.setAttribute("class", `bh${savedState.bh}`);
 
   } else {
     console.log("No saved state found.");
