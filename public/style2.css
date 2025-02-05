@@ -247,11 +247,7 @@ height: auto;
 }
 
 #fh {
-   width: 465px;
-  height: 610px;
-   position: absolute;
-  top: 0;
-  left: 0;
+   background-color: blue;
   z-index: 1105;
 }
 
@@ -336,5 +332,35 @@ height: auto;
 }
 
 .fh1 {
+  background-image: url("");
+}
+
+
+.fh2 {
+  background-image: url("");
+}
+
+
+.fh3 {
+  background-image: url("");
+}
+
+
+.fh4 {
+  background-image: url("");
+}
+
+
+.fh5 {
+  background-image: url("");
+}
+
+
+.fh6 {
+  background-image: url("");
+}
+
+
+.fh7 {
   background-image: url("");
 }
