@@ -202,22 +202,16 @@ footer {
 
 
 #homepage {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-  max-width: 1350px;
-  max-height: 759px;
- width: auto;
-  height: 100vh;
+ width: 1350px;
+  height: 759px;
   margin: 0;
-}
-
-#homepage * {
-margin: auto;
 }
 
 #scrn {
@@ -227,7 +221,10 @@ margin: auto;
   max-height: 759px;
   display: block;
   height: 100%;
-  margin: auto;
+  margin: 0;
+}
+#homepage * {
+margin: auto;
 }
 
 #btnback1:hover {
