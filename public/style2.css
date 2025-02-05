@@ -131,6 +131,9 @@ width: auto;
 #nav {
   z-index: 1000;
 max-height: 0px;
+  position: absolute;
+  top: 465px;
+  left: 13px;
 }
 
 #btnback1, #btnstudio {

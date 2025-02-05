@@ -22,8 +22,9 @@ body {
 
 #btns {
   z-index: 1001;
-  position: relative;
-  top: 25%;
+  position: absolute;
+  top: 350px;
+  left: 185px;
   justify-content: center;
   margin: auto;
 }
@@ -90,7 +91,7 @@ width: auto;
   height: 700px;
   margin: auto;
   left: 320px;
-  bottom: 300px;
+  bottom: 190px;
 }
 
 #btnstrt {
