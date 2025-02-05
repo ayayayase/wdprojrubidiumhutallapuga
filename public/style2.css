@@ -92,8 +92,9 @@ width: auto;
   color: white;
   z-index: 1000;
   margin: auto;
-  position: relative;
-  bottom: 45%;
+  position: absolute;
+  bottom: 705px;
+  left: 520px;
 }
 
 
@@ -131,8 +132,7 @@ width: auto;
   z-index: 1000;
 max-height: 0px;
   position: absolute;
- top: 469.5px;
-  left: 14px;
+  
 }
 
 #btnback1, #btnstudio {
