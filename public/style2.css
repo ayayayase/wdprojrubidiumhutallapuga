@@ -132,7 +132,7 @@ width: auto;
   z-index: 1000;
 max-height: 0px;
   position: absolute;
-  
+  top: 450px;
 }
 
 #btnback1, #btnstudio {
