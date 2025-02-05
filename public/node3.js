@@ -3,10 +3,18 @@ document.getElementById("btnback1").onclick = function () {
   location.href = "page2.html";
 }
 
-// button to change the display name of the character
+let maxLength = 9;  
+
 document.getElementById("changename").onclick = function changename () {
-  document.getElementById("name").innerHTML = window.prompt("Enter desired name");
+  let userInput = window.prompt("Enter desired name (character limit: 9)");
+
+  if (userInput && userInput.length > maxLength) {
+    alert(`${maxLength} only please!`);
+  } else {
+    document.getElementById("name").innerHTML = userInput;  // Update the name if valid
+  }
 }
+
 
 //button to change the dialogue of the character
 document.getElementById("changedialogue").onclick = function changedialogue () {
