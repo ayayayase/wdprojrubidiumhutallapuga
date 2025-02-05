@@ -202,7 +202,7 @@ footer {
 
 
 #homepage {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -254,14 +254,14 @@ margin: auto;
 }
 
 #main {
-  z-index: 1007;
+  z-index: 999;
   max-height: 759px;
   max-width: auto;
   height: 610px;
   width: 465px;
-  position: relative;
-  bottom: 695px;
-  right: 270px;
+  position: absolute;
+  margin: auto;
+  grid: (1,1);
 }
 
 #doll {
@@ -292,6 +292,7 @@ margin: auto;
   top: 0;
   left: 0;
   z-index: 1099;
+  background-image: 1px solid red;
 }
 
 #shoes {
