@@ -94,3 +94,25 @@ document.getElementById("btnstudio").onclick = function () {
   saveState(); 
   location.href = "page3.html";
 };
+
+window.onload = function () {
+  let savedState = localStorage.getItem("characterState");
+
+  if (savedState) {
+    savedState = JSON.parse(savedState);
+
+    let face = document.getElementById("face");
+    let top = document.getElementById("top");
+    let bottom = document.getElementById("bottom");
+    let fh = document.getElementById("fh");
+    let bh = document.getElementById("bh");
+
+    face.setAttribute("class", `face${savedState.face}`);
+    top.setAttribute("class", `top${savedState.top}`);
+    bottom.setAttribute("class", `bottom${savedState.bottom}`);
+    fh.setAttribute("class", `fh${savedState.fh}`);
+    bh.setAttribute("class", `bh${savedState.bh}`);
+  } else {
+    console.log("No saved state found.");
+  }
+};
