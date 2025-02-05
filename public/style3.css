@@ -32,8 +32,8 @@ body {
 
 #btnback1 {
   position: relative;
-  top: 110%;
-  padding-right: 1300px;
+  top: 220px;
+  right: 650px;
 }
 
 #btnback1:hover {
@@ -90,9 +90,8 @@ z-index: 999;
   height: auto;
   width: 1200px;
   margin: 0;
-  left: 5%;
-  top: 9%;
- ]
+ left: 70px;
+  top: 65px;
 }
 
 #name {
@@ -136,7 +135,7 @@ z-index: 999;
    z-index: 1000;
   font-size: 60px;
    position: absolute;
-  bottom: 600px;
+  top: 90px;
   left: 175px;
   font-family: arcadealternate;
   color:white;
@@ -144,28 +143,29 @@ z-index: 999;
 }
 
 #showhide {
-   z-index: 1000;
+    z-index: 1000;
   font-size: 60px;
-   position: relative;
-  bottom: 1025%;
-    left: 13%;
+   position: absolute;
+  top: 90px;
+  left: 175px;
   font-family: arcadealternate;
   color:white;
+  padding-bottom: 10px;
   visibility: hidden;
 }
 
 #changename {
   z-index: 1000;
-   position: relative;
-  bottom: 1900px;
-    left: 13%;
+   position: absolute;
+ bottom: 550px;
+  left: 175px;
 }
 
 #changebackground {
   z-index: 1000;
-   position: relative;
-  bottom: 1920px;
-    left: 13%;
+   position: absolute;
+   bottom: 500px;
+  left: 175px;
 }
 
 #changename:hover, #changebackground:hover, #changedialogue:hover, #hideshow:hover, #showhide:hover{
