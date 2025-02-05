@@ -9,7 +9,7 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://i.bandori.party/u/c/art/a/4905Eve-Wakamiya-Pure-Filled-With-Gratitude-and-Joy-UYQS0P.png");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled%20design%20(3).png?v=1738759857262");
 background-repeat: no-repeat;
   background-size: cover;
 }
@@ -224,7 +224,7 @@ transform: translate(-50%, -50%);
   margin: 0;
 }
 #homepage * {
-margin: auto;
+margin: 0;
 }
 
 #btnback1:hover {
@@ -257,8 +257,8 @@ margin: auto;
   height: 610px;
   width: 465px;
   position: absolute;
-  margin: auto;
-  grid: (1,1);
+margin: auto;
+  left: 430px;
 }
 
 #doll {
