@@ -247,7 +247,11 @@ height: auto;
 }
 
 #fh {
-   background-color: blue;
+   width: 465px;
+  height: 610px;
+   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1105;
 }
 
@@ -332,35 +336,65 @@ height: auto;
 }
 
 .fh1 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083320.png?v=1738715849948");
 }
 
 
 .fh2 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083318.png?v=1738715850986");
 }
 
 
 .fh3 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083316.png?v=1738715853863");
 }
 
 
 .fh4 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083314.png?v=1738715857597");
 }
 
 
 .fh5 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083312.png?v=1738715863155");
 }
 
 
 .fh6 {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083310.png?v=1738715866812");
 }
 
 
 .fh7 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083308.png?v=1738715869111");
+}
+
+
+
+.bh1 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083253.png?v=1738728888374");
+}
+
+.bh2 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083250.png?v=1738728888374");
+}
+
+.bh3 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083248.png?v=1738728894265");
+}
+
+.bh4 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083245.png?v=1738728896458");
+}
+
+.bh5 {
+  background-image: url("");
+}
+
+.bh6 {
+  background-image: url("");
+}
+
+.bh7 {
   background-image: url("");
 }

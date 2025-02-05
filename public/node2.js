@@ -64,7 +64,7 @@ function nextfh() {
     state.fh++;
     fh.setAttribute("class", `fh${state.fh}`);
   }
-  else if (state.fh == 6) {
+  else if (state.fh == 8) {
     state.fh = 1;
     fh.setAttribute("class", `fh${state.fh}`);
   }
