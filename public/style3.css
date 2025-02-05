@@ -186,10 +186,13 @@ footer {
 
 
 #homepage {
-  display: grid;
+ display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
  width: 1350px;
   height: 759px;
   margin: 0;
@@ -198,7 +201,6 @@ footer {
 #homepage * {
 margin: auto;
 }
-
 #scrn {
    grid-column: 1;
   grid-row: 1;
