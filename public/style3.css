@@ -44,8 +44,6 @@ body {
 #title {
   z-index: 1000;
   position: relative;
-  bottom: 300%;
-  left: 62%;
   font-family: plank;
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
@@ -191,13 +189,14 @@ footer {
   display: grid;
   justify-content: center;
   align-items: center;
-  position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
+  position: relative;
  width: 1350px;
   height: 759px;
   margin: 0;
+}
+
+#homepage * {
+margin: auto;
 }
 
 #scrn {
