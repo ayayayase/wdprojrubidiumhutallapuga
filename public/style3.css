@@ -59,7 +59,8 @@ body {
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
   font-size: 80px;
-  
+  left: 62.5%;
+  bottom: 70%;
 }
 
 #caption {
@@ -70,6 +71,8 @@ body {
   top: 8.5%;
   right: 15%;
   color: #F862FF;
+  position: absolute;
+  top: 75px;
 }
 
 #hrtlndecor {
@@ -78,16 +81,18 @@ body {
   width: 400px;
   position: absolute;
   top: 8%;
-  right: 13%;
+  right: 11.5%;
 }
 
 #dialoguebox {
 z-index: 999;
-  position: relative;
+  position: absolute;
   height: auto;
   width: 1200px;
-  bottom: 135%;
-  margin: auto;
+  margin: 0;
+  left: 5%;
+  top: 9%;
+  border: solid 1px red;
 }
 
 #name {
@@ -95,7 +100,7 @@ z-index: 999;
   position: absolute;
   font-size: 55px;
   font-family: arcadealternate;
-  top: 405px;
+  top: 439px;
   left: 360px;
   color: #ad8cff;
 }
