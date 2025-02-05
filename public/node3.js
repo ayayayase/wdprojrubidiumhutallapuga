@@ -79,6 +79,7 @@ window.onload = function () {
     console.log("No saved state found.");
   }
 };
+
 let state = 1;
 
 function changebg() {
@@ -86,12 +87,12 @@ function changebg() {
   
   let bg = document.querySelector("#bg");
   
-  if (state.bg < 8) {
-    state.bg++;
-    bg.setAttribute("class", `bg${state.bg}`);
+  if (state < 8) {
+    state ++;
+    bg.setAttribute("class", `bg${state}`);
   }
-  else if (state.bg == 8) {
+  else if (state == 8) {
     state.bg = 1;
-    bg.setAttribute("class", `bg${state.bg}`);
+    bg.setAttribute("class", `bg${state}`);
   }
 }

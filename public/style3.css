@@ -245,10 +245,9 @@ transform: translate(-50%, -50%);
 
   display: block;
   margin: 0;
-  border: 1px solid red;
-
-  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(6).png?v=1738770347706");
-  background-size: cover;
+  
+  z-index: 998;
+  background-color: red;
 }
   
 #homepage * {
@@ -348,7 +347,7 @@ margin: auto;
 .face3,
 .face4,
 .face5, .top1, .top2, .top3, .top4, .top5, .bottom1, .bottom2, .bottom3, .bottom4, .bottom5, .fh1, .fh2, .fh3, .fh4,
-.fh5, .fh6, .fh7, .bh1, .bh2, .bh3, .bh4, .bh5, .bh6, .bh7{
+.fh5, .fh6, .fh7, .bh1, .bh2, .bh3, .bh4, .bh5, .bh6, .bh7, .bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7{
    background-size: cover;
         background-repeat: no-repeat;
 }
@@ -480,4 +479,31 @@ margin: auto;
   transform:scale(1.2);
   transition: 0.1s;
   cursor: pointer;
+}
+
+.bg1 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(6).png?v=1738770347706");
+}
+
+.bg2 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(5).png?v=1738770349073");
+}
+
+.bg3 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(4).png?v=1738770354086");
+}
+.bg4 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(3).png?v=1738770357854");
+}
+
+.bg5 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(2).png?v=1738770359735");
+}
+
+.bg6 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(1).png?v=1738770362871");
+}
+
+.bg7 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h.png?v=1738770367998");
 }
