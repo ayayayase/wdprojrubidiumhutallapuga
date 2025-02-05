@@ -132,13 +132,13 @@ width: auto;
   z-index: 1000;
 max-height: 0px;
   position: absolute;
-  top: 465px;
-  left: 13px;
+ top: 469.5px;
+  left: 14px;
 }
 
 #btnback1, #btnstudio {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 200px;
+  max-height: 200px;
   width: 200px;
   height: auto;
   grid-row: 1;
@@ -207,9 +207,7 @@ height: auto;
 
 }
 
-* {
-border: 1px solid red;
-}
+
 
 #facebutton:hover ,#shoesbutton:hover ,#topbutton:hover, #backhairbutton:hover, #bottombutton:hover, #fronthairbutton:hover {
   filter: brightness(80%);
