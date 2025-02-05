@@ -113,6 +113,12 @@ z-index: 999;
   top: 515px;
   left: 330px;
   color: #ad8cff;
+  max-width: 675px;
+  max-height: 130px;
+    word-wrap: break-word; 
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  overflow: hidden;
 }
 
 #changename, #changebackground {
