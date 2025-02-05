@@ -57,10 +57,8 @@ footer {
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-  max-width: 1350px;
-  max-height: 759px;
- width: auto;
-  height: 100vh;
+ width: 1350px;
+  height: 759px;
   margin: 0;
 }
 
@@ -82,14 +80,13 @@ transform: translate(-50%, -50%);
 
 #logo {
   z-index: 999;
-  position: relative;
+  position: absolute;
   max-width: 1350px;
   max-height: 759px;
   position: relative;
 width: auto;
   height: 700px;
   margin: auto;
-  bottom: 20%;
 }
 
 #btnstrt {
