@@ -84,3 +84,13 @@ function nextbh() {
     bh.setAttribute("class", `bh${state.bh}`);
   }
 }
+
+function saveState() {
+  localStorage.setItem("characterState", JSON.stringify(state));
+}
+
+
+document.getElementById("btnstudio").onclick = function () {
+  saveState(); 
+  location.href = "page3.html";
+};

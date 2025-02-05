@@ -226,6 +226,11 @@ height: auto;
 }
 
 #shoes {
+   width: 465px;
+  height: 610px;
+   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1101;
 }
 
