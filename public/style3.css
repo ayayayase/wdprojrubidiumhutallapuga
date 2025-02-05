@@ -233,15 +233,17 @@ transform: translate(-50%, -50%);
 }
 
 #bg {
-   grid-column: 1;
+ grid-column: 1;
   grid-row: 1;
-   max-width: auto;
-  max-height: auto;
+  position: absolute;
+   max-width: 981px;
+  max-height: 581px;
+  width: 981px;
   display: block;
   height: 100%;
   margin: 0;
   border: 1px solid red;
-    z-index: 1000;
+  
     background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/h%20(6).png?v=1738770347706");
 }
   
