@@ -201,6 +201,7 @@ transform: translate(-50%, -50%);
 #homepage * {
 margin: auto;
 }
+
 #scrn {
    grid-column: 1;
   grid-row: 1;
@@ -211,24 +212,12 @@ margin: auto;
   margin: auto;
 }
 
-#scrn, #logo, #namez{
- grid-column: 1;
-  grid-row: 1;
-}
-
 #btnback1:hover {
   filter: brightness(80%);
   cursor: pointer;
 }
 
-#namez {
-  font-family: arcadealternate;
-  color: white;
-  z-index: 1000;
-  margin: auto;
-  position: relative;
-  bottom: 45%;
-}
+
 
 #btnback1 {
   display: grid;
