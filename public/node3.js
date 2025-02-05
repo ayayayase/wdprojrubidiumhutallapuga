@@ -79,18 +79,19 @@ window.onload = function () {
     console.log("No saved state found.");
   }
 };
+let state = 1;
 
-function nextface() {
-  console.log("faceworks");
+function changebg() {
+  console.log("bgworks");
   
-  let face = document.querySelector("#face");
+  let bg = document.querySelector("#bg");
   
-  if (state.face < 6) {
-    state.face++;
-    face.setAttribute("class", `face${state.face}`);
+  if (state.bg < 8) {
+    state.bg++;
+    bg.setAttribute("class", `bg${state.bg}`);
   }
-  else if (state.face == 6) {
-    state.face = 1;
-    face.setAttribute("class", `face${state.face}`);
+  else if (state.bg == 8) {
+    state.bg = 1;
+    bg.setAttribute("class", `bg${state.bg}`);
   }
 }
