@@ -229,6 +229,11 @@ height: auto;
 }
 
 #bottom {
+  width: 465px;
+  height: 610px;
+   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1102;
 }
 
@@ -267,7 +272,7 @@ height: auto;
 .face2,
 .face3,
 .face4,
-.face5, .top1, .top2, .top3, .top4, .top5{
+.face5, .top1, .top2, .top3, .top4, .top5, .bottom1, .bottom2, .bottom3, .bottom4, .bottom5{
    background-size: cover;
         background-repeat: no-repeat;
 }
@@ -292,12 +297,34 @@ height: auto;
   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled35_20250129173158.png?v=1738158963647");
 }
 
-#shoesbutton:active ,#topbutton:active, #backhairbutton:active, #bottombutton:active, #fronthairbutton:active {
- 
+#facebutton:active, #shoesbutton:active ,#topbutton:active, #backhairbutton:active, #bottombutton:active, #fronthairbutton:active {
+ transform:scale(1.2);
+  transition: 0.1s;
   cursor: pointer;
 }
 
-#facebutton:active {
+#btnback1:active, #btnstudio:active {
   transform:scale(1.2);
-  transition: 0.2s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.bottom1 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/bottom1.png?v=1738162449327");
+}
+
+.bottom2 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/bottom2.png?v=1738162457729");
+}
+
+.bottom3 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/bottom3.png?v=1738162461539");
+}
+
+.bottom4 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/bottom4.png?v=1738162465414");
+}
+
+.bottom5 {
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/bottom5.png?v=1738162468095");
 }

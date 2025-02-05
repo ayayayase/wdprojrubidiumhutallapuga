@@ -114,6 +114,12 @@ padding-left: 40px;
   cursor: pointer;
 }
 
+#btnstrt:active; #btnstudio:active {
+  transform:scale(1.2);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
 #top {
   font-family: arcadealternate;
   color: white;
