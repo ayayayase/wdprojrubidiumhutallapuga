@@ -79,3 +79,18 @@ window.onload = function () {
     console.log("No saved state found.");
   }
 };
+
+function nextface() {
+  console.log("faceworks");
+  
+  let face = document.querySelector("#face");
+  
+  if (state.face < 6) {
+    state.face++;
+    face.setAttribute("class", `face${state.face}`);
+  }
+  else if (state.face == 6) {
+    state.face = 1;
+    face.setAttribute("class", `face${state.face}`);
+  }
+}
