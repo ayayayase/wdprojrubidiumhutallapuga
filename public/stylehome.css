@@ -111,12 +111,12 @@ padding-left: 40px;
 }
 
 
-#btnstrt:hover, #btnstudio:hover{
+#btnstrt:hover, #btnstudio:hover, #ABOUT:hover{
   filter: brightness(80%);
   cursor: pointer;
 }
 
-#btnstrt:active; #btnstudio:active, #ABOUT {
+#btnstrt:active; #btnstudio:active, #ABOUT:active {
   transform:scale(1.2);
   transition: 0.1s;
   cursor: pointer;
@@ -141,5 +141,8 @@ padding-left: 40px;
   z-index: 1000;
   margin: auto;
   position: absolute;
-  bottom: 45%;
+  bottom: 703px;
+  left: 180px;
+  font-size: 30px;
+  
 }
