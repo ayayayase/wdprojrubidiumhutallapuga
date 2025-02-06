@@ -451,3 +451,15 @@ background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e
 .shoes5 {
 background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072053.png?v=1738842355857");
 }
+
+#ABOUT {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 703px;
+  left: 180px;
+  font-size: 30px;
+  
+}
