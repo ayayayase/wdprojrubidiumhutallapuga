@@ -311,7 +311,7 @@ height: auto;
 .face3,
 .face4,
 .face5, .top1, .top2, .top3, .top4, .top5, .bottom1, .bottom2, .bottom3, .bottom4, .bottom5, .fh1, .fh2, .fh3, .fh4,
-.fh5, .fh6, .fh7, .bh1, .bh2, .bh3, .bh4, .bh5, .bh6, .bh7{
+.fh5, .fh6, .fh7, .bh1, .bh2, .bh3, .bh4, .bh5, .bh6, .bh7, .shoes1, .shoes2, .shoes3, .shoes4, .shoes5 {
    background-size: cover;
         background-repeat: no-repeat;
 }
@@ -430,4 +430,24 @@ height: auto;
 
 .bh7 {
   background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250205083235.png?v=1738728925030");
+}
+
+.shoes1 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072103.png?v=1738842343317");
+}
+
+.shoes2{
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072101.png?v=1738842345645");
+}
+
+.shoes3 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072059.png?v=1738842348403");
+}
+
+.shoes4 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072055.png?v=1738842351634");
+}
+
+.shoes5 {
+background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/sprites_20250206072053.png?v=1738842355857");
 }

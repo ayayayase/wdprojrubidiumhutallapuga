@@ -68,12 +68,14 @@ window.onload = function () {
     let bottom = document.getElementById("bottom");
     let fh = document.getElementById("fh");
     let bh = document.getElementById("bh");
+     let shoes = document.getElementById("shoes");
 
     face.setAttribute("class", `face${savedState.face}`);
     top.setAttribute("class", `top${savedState.top}`);
     bottom.setAttribute("class", `bottom${savedState.bottom}`);
     fh.setAttribute("class", `fh${savedState.fh}`);
      bh.setAttribute("class", `bh${savedState.bh}`);
+     shoes.setAttribute("class", `shoes${savedState.shoes}`);
 
   } else {
     console.log("No saved state found.");
