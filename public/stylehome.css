@@ -146,3 +146,11 @@ padding-left: 40px;
   font-size: 30px;
   
 }
+
+#soundbutton {
+padding-right: 40px;
+ max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
