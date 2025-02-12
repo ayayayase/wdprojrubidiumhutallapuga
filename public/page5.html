@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Button</title>
+    <title>Image Button</title>
     <style>
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
+            background: none;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            padding: 0;
         }
-        button:hover {
-            background-color: #0056b3;
+        button img {
+            width: 100px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <button onclick="playSound()">Play Sound</button>
-    <audio id="sound" src="sound.mp3"></audio>
+    <button onclick="buttonClicked()">
+        <img src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/soundbutton?v=1739342465062">
+    </button>
     
     <script>
-        function playSound() {
-            document.getElementById("sound").play();
+        function buttonClicked() {
+            alert("Button clicked!");
         }
     </script>
 </body>
