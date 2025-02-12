@@ -168,3 +168,13 @@ max-height: 0px;
 #homepage * {
   margin: auto;
 }
+
+#description {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 80px;
+  right: 185px;
+  color: #F862FF;
+}
