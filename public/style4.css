@@ -180,3 +180,13 @@ max-height: 0px;
   text-align: justify;
   width: 800px;
 }
+
+#soundbutton {
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 335px;
+  right: 130px;
+  width:130px;
+  
+}

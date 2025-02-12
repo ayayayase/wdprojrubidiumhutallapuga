@@ -1,6 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Selector</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #F862FF;
+            color: purple;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
 <body>
-  <audio autoplay loop>
-  <source src = "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music?v=1739355259512" type = "audio/ogg">
-  <source src = "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music?v=1739355259512" type = "audio/mpeg">
+  <audio autoplay>
+        <option value="">Sound 1</option>
+    <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
 </audio>
+    <label for="audioSelect">Choose a sound:</label>
+    <select id="audioSelect">
+        <option value="">Sound 1</option>
+        <option value="">Sound 2</option>
+        <option value="">Sound 3</option>
+    </select>
+    <button onclick="playSelectedSound()">Play Sound</button>
+    <audio id="audioPlayer"></audio>
+    
+    <script>
+        function playSelectedSound() {
+            var audioPlayer = document.getElementById("audioPlayer");
+            var selectedSound = document.getElementById("audioSelect").value;
+            audioPlayer.src = selectedSound;
+            audioPlayer.play();
+        }
+    </script>
 </body>
+</html>
