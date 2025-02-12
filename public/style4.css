@@ -170,12 +170,17 @@ max-height: 0px;
 }
 
 #description {
-   position: absolute;
-  z-index:1000;
   font-family: arcadealternate;
-  font-size: 30px;
-  top: 220px;
-  right: 500px;
   color: #F862FF;
-  margin: 
+   z-index: 999;
+  position: absolute;
+  max-width: 1350px;
+  max-height: 759px;
+  position: absolute;
+  width: auto;
+  height: 700px;
+  margin: auto;
+  left: 230px;
+  top: 350px;
+
 }
