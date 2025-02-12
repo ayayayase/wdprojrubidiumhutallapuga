@@ -174,13 +174,11 @@ max-height: 0px;
   color: #F862FF;
    z-index: 999;
   position: absolute;
-  max-width: 1350px;
-  max-height: 759px;
-  position: absolute;
   width: auto;
   height: 700px;
+  font-size: 25px;
   margin: auto;
-  left: 230px;
+  left: 200px;
   top: 350px;
-
+  text-align: justify;
 }
