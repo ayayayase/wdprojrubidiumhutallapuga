@@ -8,23 +8,28 @@
         button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #007bff;
-            color: white;
+            background-color: #F862FF;
+            color: purple;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: pink;
         }
     </style>
 </head>
 <body>
+  <audio autoplay>
+        <option value="https://youtu.be/2m4u4JXs8iA?si=ktb23rbjBgFCdW5l">Sound 1</option>
+    <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
     <label for="audioSelect">Choose a sound:</label>
     <select id="audioSelect">
-        <option value="sound1.mp3">Sound 1</option>
-        <option value="sound2.mp3">Sound 2</option>
-        <option value="sound3.mp3">Sound 3</option>
+        <option value="https://youtu.be/2m4u4JXs8iA?si=ktb23rbjBgFCdW5l">Sound 1</option>
+        <option value="https://youtube.com/shorts/SMuxo6loL8w?si=o6NH9g-JS1XXlasL">Sound 2</option>
+        <option value="https://youtu.be/Uj93hicGDNc?si=SdCSjvRG-4Md6vYL">Sound 3</option>
     </select>
     <button onclick="playSelectedSound()">Play Sound</button>
     <audio id="audioPlayer"></audio>
