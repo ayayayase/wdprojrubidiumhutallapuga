@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Selector</title>
-    <style>
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #F862FF;
-            color: purple;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: pink;
-        }
-    </style>
-</head>
 <body>
-  <audio autoplay>
-        <option value="https://youtu.be/2m4u4JXs8iA?si=ktb23rbjBgFCdW5l">Sound 1</option>
-    <source src="" type="audio/mpeg">
-    Your browser does not support the audio element.
+  <audio autoplay loop>
+  <source src = "https://youtu.be/Uj93hicGDNc?si=9eM2AZKUwbH8HBmj" type = "audio/ogg">
+  <source src = "https://youtu.be/Uj93hicGDNc?si=9eM2AZKUwbH8HBmj" type = "audio/mpeg">
 </audio>
-    <label for="audioSelect">Choose a sound:</label>
-    <select id="audioSelect">
-        <option value="https://youtu.be/2m4u4JXs8iA?si=ktb23rbjBgFCdW5l">Sound 1</option>
-        <option value="https://youtube.com/shorts/SMuxo6loL8w?si=o6NH9g-JS1XXlasL">Sound 2</option>
-        <option value="https://youtu.be/Uj93hicGDNc?si=SdCSjvRG-4Md6vYL">Sound 3</option>
-    </select>
-    <button onclick="playSelectedSound()">Play Sound</button>
-    <audio id="audioPlayer"></audio>
-    
-    <script>
-        function playSelectedSound() {
-            var audioPlayer = document.getElementById("audioPlayer");
-            var selectedSound = document.getElementById("audioSelect").value;
-            audioPlayer.src = selectedSound;
-            audioPlayer.play();
-        }
-    </script>
 </body>
-</html>
