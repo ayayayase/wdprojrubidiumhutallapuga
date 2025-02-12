@@ -169,16 +169,13 @@ max-height: 0px;
   margin: auto;
 }
 
-#description {
+#description { 
+   position: absolute;
+  z-index:1000;
   font-family: arcadealternate;
-  color: #F862FF;
-   z-index: 999;
-  position: absolute;
-  width: auto;
-  height: 700px;
   font-size: 25px;
-  margin: auto;
-  left: 200px;
-  top: 350px;
+  top: 330px;
+  right: 250px;
+  color: #F862FF;
   text-align: justify;
 }
