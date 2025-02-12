@@ -147,10 +147,12 @@ padding-left: 40px;
   
 }
 
-#soundbutton.container {
+#soundbutton {
   z-index: 1000;
   margin: auto;
   position: absolute;
-  bottom: 703px;
-  left: 180px;
+  bottom: 335px;
+  right: 130px;
+  width:130px;
+  
 }
