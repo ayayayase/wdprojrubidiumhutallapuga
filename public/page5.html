@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Button</title>
+    <title>Audio Selector</title>
     <style>
         button {
-            background: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
-            padding: 0;
         }
-        button img {
-            width: 100px;
-            height: auto;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <button onclick="buttonClicked()">
-        <img src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/soundbutton?v=1739342465062">
-    </button>
+    <label for="audioSelect">Choose a sound:</label>
+    <select id="audioSelect">
+        <option value="sound1.mp3">Sound 1</option>
+        <option value="sound2.mp3">Sound 2</option>
+        <option value="sound3.mp3">Sound 3</option>
+    </select>
+    <button onclick="playSelectedSound()">Play Sound</button>
+    <audio id="audioPlayer"></audio>
     
     <script>
-        function buttonClicked() {
-            alert("Button clicked!");
+        function playSelectedSound() {
+            var audioPlayer = document.getElementById("audioPlayer");
+            var selectedSound = document.getElementById("audioSelect").value;
+            audioPlayer.src = selectedSound;
+            audioPlayer.play();
         }
     </script>
 </body>
