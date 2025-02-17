@@ -147,12 +147,13 @@ padding-left: 40px;
   
 }
 
-#soundbutton {
-  z-index: 1000;
-  margin: auto;
-  position: absolute;
-  bottom: 335px;
-  right: 130px;
-  width:130px;
-  
-}
+ #music-btn {
+            position: fixed;
+            top: 10px;
+            right: 250px;
+            background-color: #d8a5ff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
