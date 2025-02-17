@@ -161,3 +161,8 @@ max-height: 0px;
   cursor: pointer;
   font-size: 25px;
         }
+
+#btnback1:active, #btnstudio:active {
+  transform:scale(1.2);
+  transition: 0.1s;
+  cursor: pointer;
