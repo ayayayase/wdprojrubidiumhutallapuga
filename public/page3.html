@@ -35,11 +35,13 @@
           <div id="shoes" class=""></div>
           <div id="face" class=""></div>
     </div>
-    
+        
+      
       
   <img id="scrn" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/scren.png?v=1733993122235">
  <div id="bg"></div>
     
+
      <h1 id="namez">
     dlphutalla 
   </h1>
@@ -73,39 +75,6 @@
     <input id="dialogueinput" type="text">
     <p id="changedialogue">change dialogue</p>
 
-    <!-- Music Toggle Button -->
-    <button id="music-btn">🎵</button>
-
-    <audio id="bg-music" loop>
-        <source id="music-source" src="music1.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
-    </audio>
-
-    <script>
-        // List of music tracks
-        const tracks = ["https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music1?v=1739355431678", "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music2?v=1739358056189"];
-        let currentTrack = 0;
-        let isPlaying = false;
-
-        const musicButton = document.getElementById("music-btn");
-        const musicPlayer = document.getElementById("bg-music");
-        const musicSource = document.getElementById("music-source");
-
-        // Function to toggle music play/pause and switch tracks
-        musicButton.addEventListener("click", () => {
-            if (!isPlaying) {
-                musicPlayer.play();
-                isPlaying = true;
-                musicButton.textContent = "⏸️"; // Change icon to pause
-            } else {
-                currentTrack = (currentTrack + 1) % tracks.length;
-                musicSource.src = tracks[currentTrack];
-                musicPlayer.load();
-                musicPlayer.play();
-                musicButton.textContent = "🎵"; // Reset to play icon
-            }
-        });
-    </script>
       
           </div>
     
