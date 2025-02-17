@@ -464,12 +464,13 @@ background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e
   
 }
 
-#soundbutton {
-  z-index: 1000;
-  margin: auto;
-  position: absolute;
-  bottom: 335px;
-  right: 130px;
-  width:130px;
-  
-}
+#music-btn {
+  position: fixed;
+  top: 13px;
+  right: 300px;
+  background-color: #d8a5ff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+        }

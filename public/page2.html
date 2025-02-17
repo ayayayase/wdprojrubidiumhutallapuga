@@ -71,9 +71,33 @@
     </h1>
      
      <img id="hrtlndecor" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/heartlinedecor.gif?v=1735300541630">
-     <a href="page5.html"id="soundbutton">
-      <img id ="soundbutton" src= "https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/soundbutton?v=1739342465062" alt="Button Image">
-    </a>
+
+
+    <script>
+        // List of music tracks
+        const tracks = ["https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music1?v=1739355431678", "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music2?v=1739358056189"];
+        let currentTrack = 0;
+        let isPlaying = false;
+
+        const musicButton = document.getElementById("music-btn");
+        const musicPlayer = document.getElementById("bg-music");
+        const musicSource = document.getElementById("music-source");
+
+        // Function to toggle music play/pause and switch tracks
+        musicButton.addEventListener("click", () => {
+            if (!isPlaying) {
+                musicPlayer.play();
+                isPlaying = true;
+                musicButton.textContent = "⏸️"; // Change icon to pause
+            } else {
+                currentTrack = (currentTrack + 1) % tracks.length;
+                musicSource.src = tracks[currentTrack];
+                musicPlayer.load();
+                musicPlayer.play();
+                musicButton.textContent = "🎵"; // Reset to play icon
+            }
+        });
+    </script>
     
 
   
