@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Dress Up Game</title>
-<link rel="stylesheet" href="styles.css"> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Music Toggle</title>
+    <style>
+        /* Music button styling */
+        #music-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #d8a5ff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
 <body>
-  <div id="game-container">
-    <!-- ... your game content ... -->
-  </div>
 
-  <div id="music-controls">
-    <button id="musicButton">Play Music</button>
-  </div>
+    <!-- Music Toggle Button -->
+    <button id="music-btn">🎵</button>
 
-  <script src="script.js"></script>
+    <audio id="bg-music" loop>
+        <source id="music-source" src="music1.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        // List of music tracks
+        const tracks = ["music1.mp3", "music2.mp3", "music3.mp3"];
+        let currentTrack = 0;
+        let isPlaying = false;
+
+        const musicButton = document.getElementById("music-btn");
+        const musicPlayer = document.getElementById("bg-music");
+        const musicSource = document.getElementById("music-source");
+
+        // Function to toggle music play/pause and switch tracks
+        musicButton.addEventListener("click", () => {
+            if (!isPlaying) {
+                musicPlayer.play();
+                isPlaying = true;
+                musicButton.textContent = "⏸️"; // Change icon to pause
+            } else {
+                currentTrack = (currentTrack + 1) % tracks.length;
+                musicSource.src = tracks[currentTrack];
+                musicPlayer.load();
+                musicPlayer.play();
+                musicButton.textContent = "🎵"; // Reset to play icon
+            }
+        });
+    </script>
+
 </body>
 </html>
