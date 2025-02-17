@@ -1,46 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Selector</title>
-    <style>
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #F862FF;
-            color: purple;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: pink;
-        }
-    </style>
-</head>
+<title>Dress Up Game</title>
+<link rel="stylesheet" href="styles.css"> </head>
 <body>
-  <audio autoplay>
-        <option value="">Sound 1</option>
-    <source src="" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-    <label for="audioSelect">Choose a sound:</label>
-    <select id="audioSelect">
-        <option value="https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music?v=1739355431678">Sound 1</option>
-        <option value="https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music2?v=1739358056189">Sound 2</option>
-        <option value="">Sound 3</option>
-    </select>
-    <button onclick="playSelectedSound()">Play Sound</button>
-    <audio id="audioPlayer"></audio>
-    
-    <script>
-        function playSelectedSound() {
-            var audioPlayer = document.getElementById("audioPlayer");
-            var selectedSound = document.getElementById("audioSelect").value;
-            audioPlayer.src = selectedSound;
-            audioPlayer.play();
-        }
-    </script>
+  <div id="game-container">
+    <!-- ... your game content ... -->
+  </div>
+
+  <div id="music-controls">
+    <button id="musicButton">Play Music</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
