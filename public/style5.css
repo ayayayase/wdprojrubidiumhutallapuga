@@ -1,64 +1,163 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+  overflow-y:hidden;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled%20design%20(3).png?v=1738759857262");
+background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8e8ff;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+  display: flex;
+  flex-direction:column;
 }
 
-/* Container Box */
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#homepage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+ width: 1350px;
+  height: 759px;
+  margin: 0;
 }
 
-/* Title */
-h2 {
-    color: #8a2be2;
+footer {
+  z-index:1000;
+  color:#824ced;
+  margin-top:auto;
+  padding: 10px;
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
 }
 
-/* Buttons */
-button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #8a2be2;
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
+#scrn {
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
+  max-height: 759px;
+  display: block;
+  height: 100%;
+  margin: 0;
 }
 
-button:hover {
-    background: #6a1eb2;
+#scrn, #logo, #top{
+ grid-column: 1;
+  grid-row: 1;
 }
 
-/* Volume Slider */
-input[type="range"] {
-    width: 100%;
-    margin: 10px 0;
+#logo {
+  z-index: 999;
+  position: relative;
+  max-width: 1350px;
+  max-height: 759px;
+  position: relative;
+width: auto;
+  height: 700px;
+  margin: auto;
+  bottom: 20%;
 }
 
-/* Dark Mode Styles */
-.dark-mode {
-    background: #222;
-    color: white;
+#namez {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 93%;
+  left: 45%;
 }
 
-.dark-mode .container {
-    background: #333;
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 100px;
+  right: 180px;
 }
 
-.dark-mode button {
-    background: #555;
+#caption {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 100px;
+  right: 185px;
+  color: #F862FF;
 }
 
-.dark-mode button:hover {
-    background: #777;
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 40px;
+  right: 220px;
 }
+
+#nav {
+  z-index: 1000;
+max-height: 0px;
+  position: absolute;
+  top: 450px;
+}
+
+#homepage * {
+  margin: auto;
+}
+
+#main {
+  z-index: 1007;
+  max-height: 759px;
+  max-width: auto;
+  height: 610px;
+  width: 465px;
+  position: relative;
+  bottom: 695px;
+  right: 270px;
+}
+
+#ABOUT {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 703px;
+  left: 180px;
+  font-size: 30px;
+  
+}
+
+#music-btn {
+  position: fixed;
+  top: 13px;
+  right: 300px;
+  background-color: #d8a5ff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+        }
