@@ -162,7 +162,7 @@ max-height: 0px;
   font-size: 25px;
         }
 
-#btnback1, #btnstudio {
+#btnback1, {
   position: absolute;
   max-width: 200px;
   max-height: 200px;
