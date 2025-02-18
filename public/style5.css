@@ -180,37 +180,3 @@ max-height: 0px;
   padding: 0;
 }
 
-body {
-    background-color: #f4f4f4;
-    color: #222;
-    font-family: Arial, sans-serif;
-    transition: background 0.3s, color 0.3s;
-    text-align: center;
-    padding: 50px;
-    z-index: 1001;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: #222;
-    color: #fff;
-    border-radius: 5px;
-    z-index: 1001;
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-    background-color: #222;
-    color: #f4f4f4;
-    z-index: 1001;
-}
-
-.dark-mode button {
-    background-color: #fff;
-    color: #222;
-    z-index: 1001;
-    top: 1000px;
-}
