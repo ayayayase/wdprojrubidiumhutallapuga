@@ -191,4 +191,14 @@ max-height: 0px;
   color: #F862FF;
 }
 
-#
+#Rhein {
+   position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 330px;
+  right: 250px;
+  color: #F862FF;
+  text-align: justify;
+  width: 800px;
+}
