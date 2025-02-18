@@ -13,13 +13,6 @@
   
   <body>
     
-    <div class="container">
-        <h1>Dress-Up Game</h1>
-        <button id="theme-toggle">🌙 Dark Mode</button>
-    </div>
-
-    <script src="script.js"></script>
-    
     
    <div id="homepage">
     
@@ -49,6 +42,13 @@
         Your browser does not support the audio tag.
     </audio>
 
+     
+      
+      <div class="container">
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </div>
+
+     
     <script>
         // List of music tracks
         const tracks = ["https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music1?v=1739355431678", "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music2?v=1739358056189"];
@@ -74,22 +74,9 @@
             }
         });
       
-      <div class="container">
-        <h1>Music Volume Control</h1>
-        <audio id="bg-music" loop>
-            <source src="music.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-        <button id="play-pause">▶ Play</button>
-        <br><br>
-        <label for="volume-slider">Volume:</label>
-        <input type="range" id="volume-slider" min="0" max="1" step="0.01">
-    </div>
-
-    <script src="script.js"></script>
       
       
-
+     </script>
     
  </div>
   
