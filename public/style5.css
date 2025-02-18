@@ -108,6 +108,7 @@ width: auto;
   color: #F862FF;
 }
 
+
 #hrtlndecor {
   z-index: 1000;
   height: auto;
@@ -180,3 +181,14 @@ max-height: 0px;
   padding: 0;
 }
 
+#Duchess {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 100px;
+  right: 185px;
+  color: #F862FF;
+}
+
+#
