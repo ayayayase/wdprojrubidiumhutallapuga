@@ -78,13 +78,12 @@ width: auto;
 
 #namez {
   font-family: arcadealternate;
-  font-size: 
   color: white;
   z-index: 1000;
   margin: auto;
   position: relative;
   left: 0px;
-  top: -710px;
+  top: -735px;
 }
 
 
@@ -170,7 +169,7 @@ max-height: 0px;
   max-height: 200px;
   width: 200px;
   height: auto;
-  top: 30px;
+  top: 65%;
   z-index: 1000;
    left: -75px;
   margin-right: 1100px;
@@ -192,12 +191,6 @@ max-height: 0px;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
 }
 
-h1 {
-  position: absolute;
-  z-index:1000;
-  font-family: arcadealternate;
-  font-size: 25px;
-  top: 100px;
-  right: 185px;
-  color: #F862FF;
+#texts{
+po
 }
