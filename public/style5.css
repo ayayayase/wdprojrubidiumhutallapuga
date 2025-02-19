@@ -78,11 +78,13 @@ width: auto;
 
 #namez {
   font-family: arcadealternate;
+  font-size: 
   color: white;
   z-index: 1000;
   margin: auto;
   position: relative;
-left: 0;
+  left: 0px;
+  top: -710px;
 }
 
 
