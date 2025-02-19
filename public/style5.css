@@ -171,19 +171,24 @@ max-height: 0px;
   height: auto;
   top: 30px;
   z-index: 1000;
-  
-}
-
-#btnback1 {
-  position: absolute;
-  left: -75px;
+   left: -75px;
   margin-right: 1100px;
   padding: 0;
+}
+
+#btnback1:hover, #ABOUT:hover{
+  filter: brightness(80%);
+  cursor: pointer;
 }
 
 @font-face{
   font-family:arcadealternate;
   src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
+}
+
+@font-face {
+  font-family: plank;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
 }
 
 h1 {
