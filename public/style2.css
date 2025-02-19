@@ -92,9 +92,8 @@ width: auto;
   color: white;
   z-index: 1000;
   margin: auto;
-  position: absolute;
-  bottom: 93%;
-  left: 45%;
+  position: relative;
+  bottom: 1345px;
 }
 
 
@@ -270,14 +269,6 @@ height: auto;
   z-index: 1102;
 }
 
-#top {
-  width: 465px;
-  height: 610px;
-   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1103;
-}
 
 #fh {
    width: 465px;
