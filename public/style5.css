@@ -201,3 +201,14 @@ position: relative;
   font-family: arcadealternate;
   color: #F862FF;
 }
+
+#information {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  top: 100px;
+  right: 50px;
+  color: #F862FF;
+  text-align: justify;
+  width: 800px;
+}
