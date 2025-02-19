@@ -192,5 +192,7 @@ max-height: 0px;
 }
 
 #texts{
-po
+position: relative;
+  left: 0;
+  bottom: 500px;
 }
