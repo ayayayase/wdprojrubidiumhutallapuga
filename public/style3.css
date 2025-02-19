@@ -25,7 +25,9 @@ body {
   color: white;
   z-index: 1000;
   margin: auto;
-  position: relative;
+  position: absolute;
+  left: 40%;
+  bottom: 705px;
 }
 
 #btnback1 {
