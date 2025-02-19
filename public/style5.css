@@ -81,9 +81,8 @@ width: auto;
   color: white;
   z-index: 1000;
   margin: auto;
-  position: absolute;
-  bottom: 93%;
-  left: 45%;
+  position: relative;
+left: 0;
 }
 
 
