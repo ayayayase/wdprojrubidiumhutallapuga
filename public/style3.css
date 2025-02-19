@@ -542,11 +542,16 @@ background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e
 
 #music-btn {
   position: fixed;
-  top: 3px;
-  right: 390px;
+  top: 14px;
+  right: 300px;
   background-color: #d8a5ff;
   border: none;
   padding: 10px;
   cursor: pointer;
   font-size: 25px;
  }
+
+#ABOUT:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}

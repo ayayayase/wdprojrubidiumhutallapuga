@@ -239,6 +239,15 @@ height: auto;
   z-index: 1099;
 }
 
+#top {
+   width: 465px;
+  height: 610px;
+   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1103;
+}
+
 #shoes {
    width: 465px;
   height: 610px;
@@ -465,3 +474,8 @@ background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e
   cursor: pointer;
   font-size: 25px;
         }
+
+#ABOUT:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
