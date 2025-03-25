@@ -1,6 +1,6 @@
 # Q4 UPDATED PROJECT PLAN 
 
-To furthermore improve our project, we have decided to add an account or the ability for users to login. This is both essential for the player's game experience and the game's functionality. This way, the users would be allowed to 
+To furthermore improve our project, we have decided to add an account or the ability for users to login. This is both essential for the player's game experience and the game's functionality. This way, the users would be allowed to create their personal accounts, which helps in saving their progress and players can pick up right where they left off.
 
 1. 
 Type: user login data (username, password)
