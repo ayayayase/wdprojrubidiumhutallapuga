@@ -7,10 +7,13 @@ paragraph
 Type: user login data (username, password)
 Purpose: logging in to site and saving the progress
 Structure in JSON format:
-"uacc":[
-    {"username":"John"},
-    {"password":"Anna"},
-]
+tbr
+
+2.
+Type: save state for each feature (all doll features, background, dialogue)
+Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
+Structure in JSON format:
+tbr
 
 ~~
 
