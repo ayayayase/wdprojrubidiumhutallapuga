@@ -1,7 +1,6 @@
 # Q4 UPDATED PROJECT PLAN 
 
-pargrap
-paragraph
+Some edits that we will be making on our project includes
 
 1. 
 Type: user login data (username, password)
