@@ -2,7 +2,7 @@
 
 To furthermore improve our project, we have decided to add an account or the ability for users to login. This is both essential for the player's game experience and the game's functionality. This way, the users would be allowed to create their personal accounts, which helps in saving their progress and players can pick up right where they left off.
 
-This would help secure the information or gaming experience of the users. Having this feature, allows the users to switch devices  
+This would help secure the information or gaming experience of the users. Having this feature allows the users to switch devices yet maintain their work without facing hassles. Overall, this would enhance the game's functionality by being more personalized, safe and secure.
 
 1. 
 Type: user login data (username, password)
