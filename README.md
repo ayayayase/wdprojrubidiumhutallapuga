@@ -1,5 +1,17 @@
 # Q4 UPDATED PROJECT PLAN 
 
+pargrap
+paragraph
+
+1. 
+Type: user login data (username, password)
+Purpose: logging in to site and saving the progress
+Structure in JSON format:
+"uacc":[
+    {"username":"John"},
+    {"password":"Anna"},
+]
+
 ~~
 
 # CS Project Proposal
