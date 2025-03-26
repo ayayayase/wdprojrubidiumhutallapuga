@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Duchess Hutalla">
+  <meta name="description" content="Dress up your own character with many options available!">
+  <meta name="keywords" content="dress up, web, game, original, character, dialogue, maker, customization, custom">
+  <title>Dress the Best (Dress-Up)</title>
+  <link href="style5.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/favicon.gif?v=1735290537023">
+</head>
+  
+  <body>
+    
+    
+   <div id="homepage">
+    
+     <img id="btnback1" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/BACK.png?v=1735295726757">
+         
+     
+   <img id="scrn" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/scren.png?v=1733993122235">
+ <h1 id="namez">
+    dlphutalla x rjppuga
+  </h1>
+     <a href="page4.html" id="ABOUT" >About Game</a>
+    
+    <h1 id="title">
+      Dress Up
+    </h1>
+     
+    <h1 id="caption">
+      ABOUT US
+    </h1>
+    
+     <div id="texts">
+      
+    <h1 id="US">
+      <p>Duchess Lana P. Hutalla - b2028dlphutalla@pshs.edu.ph</p>
+      <p>Rhein Jhannne P. Puga - b2028rjppuga@pshs.edu.ph</p>
+     </h1>
+       
+     <h1 id ="information">
+       We are from B2028 G9 Rubidium and we chose to work on a dress up game as we both enjoy playing the famous roblox game, Dress To Impress. A fact about us is that Duchess likes the color pink, while Rhein loves the color purple and because of this, the layout of the game exhibits these colors in different shades.
+
+       </h1>  
+     
+         </div>
+     
+     <img id="hrtlndecor" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/heartlinedecor.gif?v=1735300541630">
+    <!-- Music Toggle Button -->
+    <button id="music-btn">🎵</button>
+
+     
+     
+    <audio id="bg-music" loop>
+        <source id="music-source" src="music1.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+z
+     
+    <script>
+        // List of music tracks
+        const tracks = ["https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music1?v=1739355431678", "https://cdn.glitch.me/3b0c555a-66e1-432a-baca-4bf522e55a01/music2?v=1739358056189"];
+        let currentTrack = 0;
+        let isPlaying = false;
+
+        const musicButton = document.getElementById("music-btn");
+        const musicPlayer = document.getElementById("bg-music");
+        const musicSource = document.getElementById("music-source");
+
+        // Function to toggle music play/pause and switch tracks
+        musicButton.addEventListener("click", () => {
+            if (!isPlaying) {
+                musicPlayer.play();
+                isPlaying = true;
+                musicButton.textContent = "⏸️"; // Change icon to pause
+            } else {
+                currentTrack = (currentTrack + 1) % tracks.length;
+                musicSource.src = tracks[currentTrack];
+                musicPlayer.load();
+                musicPlayer.play();
+                musicButton.textContent = "🎵"; // Reset to play icon
+            }
+        });
+      
+
+      
+     </script>
+    
+ </div>
+  
+   
+      <footer>Copyright &copy Duchess Hutalla 9-Rubidium 2028 <br>Trawlist, A. (2018, December 30). Make a Dress-up game using Javascript, HTML and CSS. Stashable. https://stashable.wordpress.com/2018/12/30/make-a-dress-up-game-using-javascript-html-and-css/
+    </footer>
+      <script src="node2.js"></script>
+  </body>
+  
+
+  
+  
+</html>
