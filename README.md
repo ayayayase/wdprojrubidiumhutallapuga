@@ -26,7 +26,7 @@ states {
   "shoes": savedState.shoes
 }
 
-
+<img src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/USERNAME.png?v=1742975696227">
 
 ~~
 
