@@ -5,16 +5,27 @@ To furthermore improve our project, we have decided to add an account or the abi
 This would help secure the information or gaming experience of the users. Having this feature allows the users to switch devices yet maintain their work without facing hassles. Overall, this would enhance the game's functionality by being more personalized, safe and secure.
 
 1. 
-Type: user login data (username, password)
-Purpose: logging in to site and saving the progress
-Structure in JSON format:
-tbr
+- Type: user login data (username, password)
+- Purpose: logging in to site and saving the progress
+- Structure in JSON format:
+users {
+"name": req.body.name,
+"password": hashedPassword
+}
 
 2.
-Type: save state for each feature (all doll features, background, dialogue)
-Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
-Structure in JSON format:
-tbr
+- Type: save state for each feature (all doll features, background, dialogue)
+- Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
+- Structure in JSON format:
+states {
+  "face": "1",
+  "top": "2",
+  "bottom": "3",
+  "fh": "4",
+  "bh": "5",
+  "shoes": "6"
+}
+
 
 ~~
 
