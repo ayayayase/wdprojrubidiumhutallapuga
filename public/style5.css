@@ -94,8 +94,8 @@ width: auto;
   color: #b999fa;
   -webkit-text-stroke: 0.5px #814beb;
   font-size: 80px;
-  top: 100px;
-  right: 180px;
+  top: 70px;
+  right: 200px;
 }
 
 #caption {
@@ -114,7 +114,7 @@ width: auto;
   height: auto;
   width: 400px;
   position: absolute;
-  top: 40px;
+  top: 15px;
   right: 220px;
 }
 
