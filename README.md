@@ -26,10 +26,10 @@ states {
   "shoes": savedState.shoes
 }
 
-As for the saved states, they are currently already visible on the actual website. The users may change the state of the feature in page 2, and it will carry on to page 3. Unfortunately, this is still a work in progress so it is not 
+As for the saved states, they are currently already visible on the actual website. The users may change the state of the feature in page 2, and it will carry on to page 3. Unfortunately, this is still a work in progress so it is not guaranteed to always function properly.
 
 <img src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/USERNAME.png?v=1742975696227">
-
+<img src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/YE.png?v=1742977797069">
 ~~
 
 # CS Project Proposal
