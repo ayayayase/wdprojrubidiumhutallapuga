@@ -18,12 +18,12 @@ users {
 - Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
 - Structure in JSON format:
 states {
-  "face": "1",
-  "top": "2",
-  "bottom": "3",
-  "fh": "4",
-  "bh": "5",
-  "shoes": "6"
+  "face": savedState.face,
+  "top": savedState.top,
+  "bottom": savedState.bottom,
+  "fh": savedState.fh,
+  "bh": savedState.bh,
+  "shoes": savedState.shoes
 }
 
 
