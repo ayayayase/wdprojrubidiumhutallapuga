@@ -17,14 +17,14 @@ users {
 - Type: save state for each feature (all doll features, background, dialogue)
 - Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
 - Structure in JSON format:
-states {
+username: {
   "face": savedState.face,
   "top": savedState.top,
   "bottom": savedState.bottom,
   "fh": savedState.fh,
   "bh": savedState.bh,
   "shoes": savedState.shoes
-}
+  }
 
 As for the saved states, they are currently already visible on the actual website. The users may change the state of the feature in page 2, and it will carry on to page 3. Unfortunately, this is still a work in progress so it is not guaranteed to always function properly.
 
