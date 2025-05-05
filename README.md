@@ -9,8 +9,7 @@ This would help secure the information or gaming experience of the users. Having
 - Purpose: logging in to site and saving the progress
 - Structure in JSON format:
 users {
-"name": req.body.name,
-"password": hashedPassword
+username : password 
 }
 
 2.
