@@ -28,25 +28,33 @@
     <h1 id="title">
       account
     </h1>
-     
-    <div class="profile-card">
-    <img src="" alt="User Avatar" class="avatar">
 
-    <div class="user-info">
-      <h2 class="username">PlayerOne</h2>
-      <p class="level">Level 15</p>
-
-      <div class="stats">
-        <div class="stat">
-          ❤️ <span>75 HP</span>
-        </div>
-        <div class="stat">
-          ⭐ <span>1500 pts</span>
-        </div>
+    <div id="login-form">
+      <form action="/login" method="POST">
+        <input id="inputusername" type="text" name="username" placeholder="Username" required><br>
+        <input id="inputpass" type="password" name="password" placeholder="Password" required><br>
+        <button id="loginbtn" type="submit">Login</button>
+        <a href="#" id="registerlink">Don't have an account yet? Register here!</a>
+      </form>
       </div>
+
+      <div id="register-form" style="display: none;">
+      <form action="/register" method="POST">
+        <input id="inputusername" type="text" name="username" placeholder="Username" required><br>
+        <input id="inputpass" type="password" name="password" placeholder="Password" required><br>
+        <button id="registerbtn" type="submit">Register</button>
+      </form>
+    </div>  
+
+    <div id="profile-section" style="display: none;">
+      <h2>Hello, <span id="username"></span>!</h2>
+      <button onclick="logout()">Logout</button>
+      <button onclick="editpass()">Edit Password</button>
+      <button onclick="editusername()">Edit Username</button>
+      <!-- Add editing tools, saved avatars, etc. here -->
     </div>
-  </div>
-    
+     
+  
     <img id="hrtlndecor" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/heartlinedecor.gif?v=1735300541630">
     <!-- Music Toggle Button -->
     <button id="music-btn">🎵</button>
@@ -97,7 +105,7 @@ z
    
       <footer>Copyright &copy Duchess Hutalla 9-Rubidium 2028 <br>Trawlist, A. (2018, December 30). Make a Dress-up game using Javascript, HTML and CSS. Stashable. https://stashable.wordpress.com/2018/12/30/make-a-dress-up-game-using-javascript-html-and-css/
     </footer>
-      <script src="node2.js"></script>
+      <script src="node5.js"></script>
   </body>
   
 
