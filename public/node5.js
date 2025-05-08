@@ -4,13 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.json())
     .then(data => {
       if (data.loggedIn) {
-        // Show profile, hide login/register
         document.getElementById('login-form').style.display = 'none';
         document.getElementById('register-form').style.display = 'none';
         document.getElementById('profile-section').style.display = 'block';
         document.getElementById('username').innerText = data.username;
       } else {
-        // Show login form
         document.getElementById('login-form').style.display = 'block';
         document.getElementById('register-form').style.display = 'none';
         document.getElementById('profile-section').style.display = 'none';
@@ -28,4 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function logout() {
   fetch('/logout')
     .then(() => location.reload());
+}
+
+function editpass() {
+document.getElementById("editpass").style.display = "block";
+document.getElementById("editusername").style.display = "none";
+}
+
+function editusername() {
+document.getElementById("editusername").style.display = "block";
+document.getElementById("editpass").style.display = "none";
 }

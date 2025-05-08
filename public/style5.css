@@ -272,7 +272,8 @@ body {
   margin-left: 8px;
 }
 
-#login-form, #profile-section, #register-form{
+#login-form, #profile-section, #register-form, #editpass, #editusername{
   position: relative;
   bottom:500px;
+  z-index: 9999;
 }

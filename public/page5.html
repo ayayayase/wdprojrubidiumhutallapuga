@@ -40,7 +40,7 @@
 
       <div id="register-form" style="display: none;">
       <form action="/register" method="POST">
-        <input id="inputusername" type="text" name="username" placeholder="Username" required><br>
+        <input id="inputusername" type="text" name="username" placeholder="Username" required style="margin: 0;"><br>
         <input id="inputpass" type="password" name="password" placeholder="Password" required><br>
         <button id="registerbtn" type="submit">Register</button>
       </form>
@@ -51,8 +51,26 @@
       <button onclick="logout()">Logout</button>
       <button onclick="editpass()">Edit Password</button>
       <button onclick="editusername()">Edit Username</button>
-      <!-- Add editing tools, saved avatars, etc. here -->
+      <form method="POST" action="/delete" onsubmit="return confirm('Are you sure you wanna delete your account forever?! This is irreversible!');">
+        <button type="submit">DELETE ACCOUNT</button>
+      </form>
+      
     </div>
+
+    <div id="editusername" style="display: none;">
+    <form method="POST" action="/editusername">
+      <input type="text" name="newUsername" placeholder="New Username" required>
+      <button type="submit">Change Username</button>
+    </form>
+    </div>
+    
+    <div id="editpass" style="display: none;">
+      <form method="POST" action="/editpassword">
+        <input type="password" name="currentPassword" placeholder="Current Password" required>
+        <input type="password" name="newPassword" placeholder="New Password" required>
+        <button type="submit">Change Password</button>
+      </form>      
+    </div>      
      
   
     <img id="hrtlndecor" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/heartlinedecor.gif?v=1735300541630">
