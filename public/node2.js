@@ -1,20 +1,46 @@
-// just buttons to go back to homepage or studio
-
 document.getElementById("btnback1").onclick = function () {
   location.href = "index.html";
+}
+
+document.getElementById("btnstudio").onclick = function () {
+  saveState(); 
+  location.href = "page3.html";
 }
 
 document.getElementById("btnstudio").onclick = function () {
   location.href = "page3.html";
 }
 
+window.onload = function () {
+  fetch("/check-auth")
+    .then(res => res.json())
+    .then(data => {
+      if (data.loggedIn && data.characterState) {
+        loadCharacter(data.characterState);
+      } else {
+        const saved = localStorage.getItem("characterState");
+        if (saved) {
+          loadCharacter(JSON.parse(saved));
+        }
+      }
+    });
+};
+function loadCharacter(savedState) {
+  document.getElementById("face").className = "face" + savedState.face;
+  document.getElementById("top").className = "top" + savedState.top;
+  document.getElementById("bottom").className = "bottom" + savedState.bottom;
+  document.getElementById("fh").className = "fh" + savedState.fh;
+  document.getElementById("bh").className = "bh" + savedState.bh;
+  document.getElementById("shoes").className = "shoes" + savedState.shoes;
+}
+
+
 let state = {face: 1, top: 1, bottom: 1, fh: 1, bh: 1, shoes: 1}
 
 function nextface() {
   console.log("faceworks");
-  
   let face = document.querySelector("#face");
-  
+
   if (state.face < 6) {
     state.face++;
     face.setAttribute("class", `face${state.face}`);
@@ -23,13 +49,14 @@ function nextface() {
     state.face = 1;
     face.setAttribute("class", `face${state.face}`);
   }
+
+  saveState();  
 }
 
 function nexttop() {
-   console.log("topworks");
-  
+  console.log("topworks");
   let top = document.querySelector("#top");
-  
+
   if (state.top < 6) {
     state.top++;
     top.setAttribute("class", `top${state.top}`);
@@ -38,13 +65,13 @@ function nexttop() {
     state.top= 1;
     top.setAttribute("class", `top${state.top}`);
   }
-}
+
+  saveState(); }
 
 function nextbottom() {
-   console.log("bottomworks");
-  
+  console.log("bottomworks");
   let bottom = document.querySelector("#bottom");
-  
+
   if (state.bottom < 6) {
     state.bottom++;
     bottom.setAttribute("class", `bottom${state.bottom}`);
@@ -53,13 +80,14 @@ function nextbottom() {
     state.bottom= 1;
     bottom.setAttribute("class", `bottom${state.bottom}`);
   }
+
+  saveState();  
 } 
 
 function nextfh() {
-   console.log("fhworks");
-  
+  console.log("fhworks");
   let fh = document.querySelector("#fh");
-  
+
   if (state.fh < 8) {
     state.fh++;
     fh.setAttribute("class", `fh${state.fh}`);
@@ -68,13 +96,14 @@ function nextfh() {
     state.fh = 1;
     fh.setAttribute("class", `fh${state.fh}`);
   }
+
+  saveState();  
 }
 
 function nextbh() {
-   console.log("bhworks");
-  
+  console.log("bhworks");
   let bh = document.querySelector("#bh");
-  
+
   if (state.bh < 8) {
     state.bh++;
     bh.setAttribute("class", `bh${state.bh}`);
@@ -83,13 +112,14 @@ function nextbh() {
     state.bh = 1;
     bh.setAttribute("class", `bh${state.bh}`);
   }
+
+  saveState();  
 }
 
 function nextshoes() {
-   console.log("shoesworks");
-  
+  console.log("shoesworks");
   let shoes = document.querySelector("#shoes");
-  
+
   if (state.shoes < 6) {
     state.shoes++;
     shoes.setAttribute("class", `shoes${state.shoes}`);
@@ -98,39 +128,38 @@ function nextshoes() {
     state.shoes = 1;
     shoes.setAttribute("class", `shoes${state.shoes}`);
   }
+
+  saveState(); 
 }
 
 function saveState() {
-  localStorage.setItem("characterState", JSON.stringify(state));
+  localStorage.setItem("characterState", JSON.stringify(state)); 
+  fetch("/check-auth")
+    .then(res => res.json())
+    .then(data => {
+      if (data.loggedIn) {
+        const stateData = {
+          face: state.face,
+          top: state.top,
+          bottom: state.bottom,
+          fh: state.fh,
+          bh: state.bh,
+          shoes: state.shoes
+        };
+
+        fetch("/saveCharacterState", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ state: stateData })
+        }).then(response => {
+          if (response.ok) {
+            console.log("Saved on server.");
+          }
+        });
+      } else {
+        console.log("Saved to local storage only.");
+      }
+    });
 }
-
-
-document.getElementById("btnstudio").onclick = function () {
-  saveState(); 
-  location.href = "page3.html";
-};
-
-window.onload = function () {
-  let savedState = localStorage.getItem("characterState");
-
-  if (savedState) {
-    savedState = JSON.parse(savedState);
-
-    let face = document.getElementById("face");
-    let top = document.getElementById("top");
-    let bottom = document.getElementById("bottom");
-    let fh = document.getElementById("fh");
-    let bh = document.getElementById("bh");
-     let shoes = document.getElementById("shoes");
-
-    face.setAttribute("class", `face${savedState.face}`);
-    top.setAttribute("class", `top${savedState.top}`);
-    bottom.setAttribute("class", `bottom${savedState.bottom}`);
-    fh.setAttribute("class", `fh${savedState.fh}`);
-    bh.setAttribute("class", `bh${savedState.bh}`);
-    shoes.setAttribute("class", `shoes${savedState.shoes}`);
-    
-  } else {
-    console.log("No saved state found.");
-  }
-};

@@ -37,3 +37,7 @@ function editusername() {
 document.getElementById("editusername").style.display = "block";
 document.getElementById("editpass").style.display = "none";
 }
+
+document.getElementById("btnback1").onclick = function () {
+  location.href = "index.html";
+}

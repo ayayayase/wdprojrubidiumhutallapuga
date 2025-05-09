@@ -10,6 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const USERS_FILE = path.join(__dirname, "users.json");
 
+app.use(express.json());
+
 function loadUsers() {
   if (fs.existsSync(USERS_FILE)) {
     const rawData = fs.readFileSync(USERS_FILE);
@@ -35,9 +37,9 @@ function parseCookies(cookieHeader) {
       cookies[parts[0]] = parts[1];
     }
   }
+  console.log(cookies); 
   return cookies;
 }
-
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
@@ -49,9 +51,21 @@ app.post("/register", (req, res) => {
   const users = loadUsers();
 
   if (users[username]) {
-    res.status(409).send("Username already taken!");
-  } else {
-    users[username] = password;
+    res.status(409).send("Username already taken!");} 
+    else {
+    const defaultCharacterState = {
+      face: 1,
+      top: 1,
+      bottom: 1,
+      fh: 1,
+      bh: 1,
+      shoes: 1
+    };
+
+    users[username] = {
+      password,
+      characterState: defaultCharacterState
+    };
     saveUsers(users);
     res.redirect("/page5.html");
   }
@@ -62,7 +76,7 @@ app.post("/login", (req, res) => {
   const password = req.body.password;
   const users = loadUsers();
 
-  if (users[username] && users[username] === password) {
+  if (users[username] && users[username].password === password) {
     const sid = Date.now().toString();
     sessions[sid] = { username: username };
     res.setHeader("Set-Cookie", "sid=" + sid + "; Path=/; HttpOnly");
@@ -75,11 +89,47 @@ app.post("/login", (req, res) => {
 app.get("/check-auth", (req, res) => {
   const cookies = parseCookies(req.headers.cookie);
   const session = sessions[cookies.sid];
+  const users = loadUsers();
+
   if (session) {
-    res.json({ loggedIn: true, username: session.username });
+    const username = session.username;
+    const user = users[username];
+    let charState = null;
+
+    if (typeof user === "object" && user.characterState) {
+      charState = user.characterState;
+    }
+    res.json({
+      loggedIn: true,
+      username: username,
+      characterState: charState
+    });
   } else {
-    res.json({ loggedIn: false });
+    res.json({
+      loggedIn: false,
+      characterState: null
+    });
   }
+});
+
+app.post("/saveCharacterState", (req, res) => {
+  const cookies = parseCookies(req.headers.cookie);
+  const session = sessions[cookies.sid];
+  if (!session) {
+    return res.status(401).send("Not logged in!");
+  }
+  const username = session.username;
+  const users = loadUsers();
+
+  if (!users[username]) {
+    return res.status(404).send("User not found.");
+  }
+
+  console.log("Received state data: ", req.body); 
+  users[username].characterState = req.body.state;
+  saveUsers(users);
+
+  res.send("Character saved!");
 });
 
 app.get("/logout", (req, res) => {
@@ -94,18 +144,22 @@ app.get("/logout", (req, res) => {
 app.post("/editpassword", (req, res) => {
   const { currentPassword, newPassword } = req.body;
   const cookies = parseCookies(req.headers.cookie);
-  const session = sessions[cookies.sid];
+  const sid = cookies.sid;  
 
-  if (!session) {
-    return res.status(401).send("Unauthorized!");
+  if (!sid) {
+    return res.status(401).send("Not logged in!"); 
   }
+  const session = sessions[sid]; 
+  const username = session.username; 
+  const users = loadUsers();  
 
-  const username = session.username;
-  const users = loadUsers();
-  if (users[username] !== currentPassword) {
-    return res.status(401).send("Wrong current password!");
+  if (!users[username]) {
+    return res.status(404).send("User not found.");
   }
-  users[username] = newPassword;
+  if (users[username].password !== currentPassword) {
+    return res.status(401).send("Current password is incorrect.");
+  }
+  users[username].password = newPassword;
   saveUsers(users);
 
   res.redirect("/page5.html");

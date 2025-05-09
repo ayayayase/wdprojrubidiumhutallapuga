@@ -1,7 +1,44 @@
-// just buttons to go back to dress up
 document.getElementById("btnback1").onclick = function () {
   location.href = "page2.html";
 }
+
+window.onload = function () {
+  var req = new XMLHttpRequest();
+  req.open("GET", "/check-auth", true);
+
+  req.onload = function () {
+    if (req.status === 200) {
+      var data = JSON.parse(req.responseText);
+
+      if (data.loggedIn && data.characterState) {
+        // If logged in, use server state
+        loadCharacter(data.characterState);
+      } else {
+        // Try to load from localStorage if not logged in
+        var saved = localStorage.getItem("characterState");
+        if (saved) {
+          loadCharacter(JSON.parse(saved));
+        } else {
+          console.log("No character state saved.");
+        }
+      }
+    } else {
+      console.log("Error checking auth");
+    }
+  };
+
+  req.send();
+};
+
+function loadCharacter(state) {
+  document.getElementById("face").className = "face" + state.face;
+  document.getElementById("top").className = "top" + state.top;
+  document.getElementById("bottom").className = "bottom" + state.bottom;
+  document.getElementById("fh").className = "fh" + state.fh;
+  document.getElementById("bh").className = "bh" + state.bh;
+  document.getElementById("shoes").className = "shoes" + state.shoes;
+}
+
 
 let maxLength = 9;  
 
@@ -56,31 +93,6 @@ document.getElementById("showhide").onclick = function hide () {
   
 document.getElementById("hideshow").style.visibility = "visible";
 }
-
-window.onload = function () {
-  let savedState = localStorage.getItem("characterState");
-
-  if (savedState) {
-    savedState = JSON.parse(savedState);
-
-    let face = document.getElementById("face");
-    let top = document.getElementById("top");
-    let bottom = document.getElementById("bottom");
-    let fh = document.getElementById("fh");
-    let bh = document.getElementById("bh");
-     let shoes = document.getElementById("shoes");
-
-    face.setAttribute("class", `face${savedState.face}`);
-    top.setAttribute("class", `top${savedState.top}`);
-    bottom.setAttribute("class", `bottom${savedState.bottom}`);
-    fh.setAttribute("class", `fh${savedState.fh}`);
-     bh.setAttribute("class", `bh${savedState.bh}`);
-     shoes.setAttribute("class", `shoes${savedState.shoes}`);
-
-  } else {
-    console.log("No saved state found.");
-  }
-};
 
 let state = 1;
 

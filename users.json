@@ -1,5 +1,26 @@
 {
   "mknsr": "testpass",
   "yabadabadoo": "password",
-  "rcfm": "ilymwuah"
+  "rcfm1134": {
+    "password": "ilysm",
+    "characterState": {
+      "face": 3,
+      "top": 1,
+      "bottom": 3,
+      "fh": 3,
+      "bh": 3,
+      "shoes": 4
+    }
+  },
+  "kms": {
+    "password": "ijbol",
+    "characterState": {
+      "face": 3,
+      "top": 2,
+      "bottom": 2,
+      "fh": 4,
+      "bh": 2,
+      "shoes": 3
+    }
+  }
 }
